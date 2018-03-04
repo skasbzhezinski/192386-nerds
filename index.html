@@ -6,12 +6,13 @@
   </head>
   <body>  
      
-    <!--<link type="text/css" rel="stylesheet" href="../auxillary-style.css">--> 
+    <!-- <link type="text/css" rel="stylesheet" href="../auxillary-style.css"> -->
+      
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p> --> 
        
         <header class="main-header"> 
           <nav class="main-navigation"> 
-              <a class="logo" href="index.html"><img src="img/nerds-logo" width="160" height="65" alt="Логотип студии Нёрдс"></a> 
+              <a class="logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a> 
               <ul class="site-navigation"> 
                   <li><a href="studio.html">студия</a></li> 
                   <li><a href="clientele.html">клиенты</a></li> 
@@ -25,21 +26,23 @@
       </header>
        
       <main class="container"> 
-          <section class="top-slider"> 
+          <section class="top-slider">
+              <!-- Активный слайд -->
               <div class="slide-1"> 
                   <h2>Долго, дорого, скрупулезно.</h2> 
                   <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p> 
-                  <p><a class="button" href="">узнать больше</a></p> 
-              </div> 
+                  <p><a class="button" href="#">узнать больше</a></p> 
+              </div>
+              <!-- Неактивны. Появляются при перелистывании -->
               <div class="slide-2"> 
                   <h2>Любим математику как никто другой</h2> 
                   <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p> 
-                  <p><a class="button" href="">узнать больше</a></p> 
+                  <p><a class="button" href="#">узнать больше</a></p> 
               </div> 
               <div class="slide-3"> 
                   <h2>Только ночь, только хардкор</h2> 
                   <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p> 
-                  <p><a class="button" href="">узнать больше</a></p> 
+                  <p><a class="button" href="#">узнать больше</a></p> 
               </div> 
           </section> 
            
@@ -50,17 +53,17 @@
                   <li> 
                       <h3>Вебсайты</h3> 
                       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> 
-                      <a class="button" href="">заказать</a>  
-                  </li> 
+                      <a class="button" href="#">заказать</a> 
+                  </li>
                   <li> 
                       <h3>Приложения</h3> 
                       <p>Покорите топ-10 приложений в AppStore и Google Play</p> 
-                      <a class="button" href="">заказать</a> 
-                  </li> 
+                      <a class="button" href="#">заказать</a> 
+                  </li>
                   <li> 
                       <h3>Презентации</h3> 
                       <p>Вы даже не подозреваете, насколько вы изумительны! </p> 
-                      <a class="button" href="">заказать</a> 
+                      <a class="button" href="#">заказать</a> 
                   </li> 
               </ul> 
           </section> 
@@ -78,8 +81,26 @@
                   </ul> 
               </div> 
               <div class="right"> 
-                  <img src="img/nerds-illustration.jpg" width="" height="" alt="Нёрдс иллюстрация"> 
-                  <p>с 2004 года Любим точность во всем:</p> 
+                  <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Нёрдс иллюстрация"> 
+                  <p>с 2004 года Любим точность во всем:</p>
+                  
+                  <ul class="percent">
+                      <li>
+                          <span>146%</span>
+                          <p>Уровень самоотдачи</p>
+                      </li>
+                      <li>
+                          <span>100%</span>
+                          <p>Соблюдение  сроков</p>
+                      </li>
+                      <li>
+                          <span>50%</span>
+                          <p>Минимальная  предоплата</p>
+                      </li>
+                  </ul>
+                  
+                  <!-- Варианты: таблица и список определений -->
+                  <!--
                   <dl class="percent"> 
                       <dt>146%</dt> 
                       <dd>Уровень  самоотдачи</dd>
@@ -90,8 +111,7 @@
                       <dt>50%</dt> 
                       <dd>Минимальная  предоплата</dd> 
                   </dl>
-                  <!-- Варианты - таблица и список -->
-                  <!--
+
                   <table class="percent">
                       <tr>
                           <td>146%</td>
@@ -106,20 +126,7 @@
                           <td>Минимальная  предоплата</td>
                       </tr>
                   </table>
-                  <ul class="percent">
-                      <li>
-                          <span>146%</span>
-                          <p>Уровень самоотдачи</p>
-                      </li>
-                      <li>
-                          <span>100%</span>
-                          <p>Соблюдение  сроков</p>
-                      </li>
-                      <li>
-                          <span>50%</span>
-                          <p>Минимальная  предоплата</p>
-                      </li>
-                  </ul> -->
+                   -->
               </div> 
           </section> 
            
@@ -127,16 +134,16 @@
               <h2 class="visually-hidden">Партнеры</h2> 
               <ul class="ref-list"> 
                   <li> 
-                      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/" alt="html academy" width="" height=""></a> 
+                      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="html academy" width="199" height="68"></a> 
                   </li> 
                   <li> 
-                      <a href="#"><img src="img/" alt="Barbershop Borodinski" width="" height=""></a> 
+                      <a href="#"><img src="img/logo-2.png" alt="Barbershop Borodinski" width="209" height="90"></a> 
                   </li> 
                   <li> 
-                      <a href="#"><img src="img/" alt="pink" width="" height=""></a> 
+                      <a href="#"><img src="img/logo-3.png" alt="pink" width="185" height="52"></a> 
                   </li> 
                   <li> 
-                      <a href="#"><img src="img/" alt="Mishka" width="" height=""></a> 
+                      <a href="#"><img src="img/logo-4.png" alt="Mishka" width="173" height="84"></a> 
                   </li> 
               </ul> 
           </section> 
@@ -151,7 +158,7 @@
                   <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p> 
                   <p>тел. +7 (812) 275-75-75</p> 
               </div>
-              <!--Всплывающее окно с формой "Напишите нам"--> 
+              <!-- Модальное окно с формой "Напишите нам" --> 
               <div class="write-us"> 
                   <h3>Напишите нам</h3> 
               </div>
@@ -164,9 +171,9 @@
                   <p>Скидка 10% для друзей из социальных сетей.</p> 
               </div> 
               <ul class="social-media"> 
-                  <li><a href="#"><img src="img/vk-icon" alt="vk"></a></li> 
-                  <li><a href="#"><img src="img/fb-icon" alt="facebook"></a></li>  
-                  <li><a href="#"><img src="img/insta-icon" alt="instagram"></a></li> 
+                  <li><a href="#"><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li> 
+                  <li><a href="#"><img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a></li>  
+                  <li><a href="#"><img src="img/insta-icon.svg" alt="instagram" width="21" height="21"></a></li> 
               </ul> 
           </section> 
       </footer> 

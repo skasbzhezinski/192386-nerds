@@ -6,12 +6,13 @@
   </head>
   <body>  
      
-    <!--<link type="text/css" rel="stylesheet" href="../auxillary-style.css">--> 
+    <!-- <link type="text/css" rel="stylesheet" href="../auxillary-style.css"> -->
+      
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p> --> 
        
       <header class="main-header"> 
           <nav class="main-navigation"> 
-              <a class="logo" href="index.html"><img src="img/nerds-logo" width="160" height="65" alt="Логотип студии Нёрдс"></a> 
+              <a class="logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a> 
               <ul class="site-navigation"> 
                   <li><a href="studio.html">студия</a></li> 
                   <li><a href="clientele.html">клиенты</a></li> 
@@ -30,20 +31,23 @@
           
           <section class="filter">
               <h2 class="visually-hidden">Фильтр</h2>
-              <!--Здесь будет форма-->
+              <!-- Здесь будет форма -->
           </section>
           
-          <section class="sort">
-              <!--Не представляю как этот блок размечать и что делать со стрелками. Может так? Второму <ul> наверное нужен другой класс? -->
+          <section class="sorting">
+              <!-- Не представляю как этот блок размечать и что делать со стрелками. Может так? -->
               <h2 class="visually-hidden">Сортировка шаблонов</h2>
               <p>сортировать:</p>
               <ul class="sorting-list">
-                  <li class="text sort-item-active">По цене</li>
+                  <li class="text sorting-item-active">По цене</li>
                   <li class="text">По типу</li>
                   <li class="text">По названию</li>
               </ul>
-              <ul class="sorting-list">
-                  <li class="arrow sort-item-active"></li>
+              
+              <!-- Блок со стрелками -->
+              <!-- Насколько я понял, подобных блоков должно быть три. Они появляются в зависимости от того какой из <li class="text"> активен? В ТЗ это не прописано -->
+              <ul class="sorting-list-appearing">
+                  <li class="arrow sorting-item-active"></li>
                   <li class="arrow"></li>
               </ul>
           </section>
@@ -68,7 +72,7 @@
                   </li>
                   <li class="template-item">
                       <h3><a href="catalog-item.html">Barbershop</a></h3>
-                      <p class="template-description">Сайт салона<!--в макете почему-то было "салоны"--> красоты. Для мужчин, да.</p>
+                      <p class="template-description">Сайт салона<!--в макете почему-то "салоны"--> красоты. Для мужчин, да.</p>
                       <span class="price">900 руб.</span>
                       <p class="template-image">
                           <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
@@ -117,10 +121,11 @@
                   <p>NЁRDS DESIGN STUDIO</p> 
                   <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p> 
                   <p>тел. +7 (812) 275-75-75</p> 
-              </div> 
+              </div>
+              <!-- Модальное окно с формой "Напишите нам" -->
               <div class="write-us"> 
                   <h3>Напишите нам</h3> 
-              </div><!--Всплывающее окно с формой "Напишите нам"--> 
+              </div> 
           </section>
           
           <section class="social"> 
@@ -128,12 +133,12 @@
               <div class="social-description"> 
                   <p><b>Давайте дружить, это выгодно!</b></p> 
                   <p>Скидка 10% для друзей из социальных сетей.</p> 
-              </div> 
+              </div>
               <ul class="social-media"> 
-                  <li><a href="#"><img src="img/vk-icon" alt="vk"></a></li> 
-                  <li><a href="#"><img src="img/fb-icon" alt="facebook"></a></li>  
-                  <li><a href="#"><img src="img/insta-icon" alt="instagram"></a></li> 
-              </ul> 
+                  <li><a href="#"><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li> 
+                  <li><a href="#"><img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a></li>  
+                  <li><a href="#"><img src="img/insta-icon.svg" alt="instagram" width="21" height="21"></a></li> 
+              </ul>
           </section> 
       </footer> 
   </body> 
