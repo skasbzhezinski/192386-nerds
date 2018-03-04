@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>  
+     
+    <!--<link type="text/css" rel="stylesheet" href="../auxillary-style.css">--> 
+    <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p> --> 
+       
+      <header class="main-header"> 
+          <nav class="main-navigation"> 
+              <a class="logo" href="index.html"><img src="img/nerds-logo" width="160" height="65" alt="Логотип студии Нёрдс"></a> 
+              <ul class="site-navigation"> 
+                  <li><a href="studio.html">студия</a></li> 
+                  <li><a href="clientele.html">клиенты</a></li> 
+                  <li><a class="site-navigation-current" href="catalog.html">магазин</a></li> 
+                  <li><a href="contacts.html">контакты</a></li>
+              </ul> 
+              <ul class="user-navigation">
+                  <li><a href="basket.html">корзина</a></li> 
+              </ul> 
+          </nav> 
+      </header>
+      
+      <main class="catalog">
+          
+          <h1>Магазин готовых шаблонов</h1>
+          
+          <section class="filter">
+              <h2 class="visually-hidden">Фильтр</h2>
+              <!--Здесь будет форма-->
+          </section>
+          
+          <section class="sort">
+              <!--Не представляю как этот блок размечать и что делать со стрелками. Может так? Второму <ul> наверное нужен другой класс? -->
+              <h2 class="visually-hidden">Сортировка шаблонов</h2>
+              <p>сортировать:</p>
+              <ul class="sorting-list">
+                  <li class="text sort-item-active">По цене</li>
+                  <li class="text">По типу</li>
+                  <li class="text">По названию</li>
+              </ul>
+              <ul class="sorting-list">
+                  <li class="arrow sort-item-active"></li>
+                  <li class="arrow"></li>
+              </ul>
+          </section>
+          
+          <section class="templates">
+              <h2 class="visually-hidden">Шаблоны страниц</h2>
+              <ul class="template-list">
+                  <li class="template-item">
+                      <h3><a href="catalog-item.html">Sedona</a></h3>
+                      <p class="template-description">Информационный сайт  для туристов</p>
+                      <p class="template-image">
+                          <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
+                      </p>
+                  </li>
+                  <li class="template-item">
+                      <h3><a href="catalog-item.html">Pink App</a></h3>
+                      <p class="template-description">Продуктовый лендинг приложения для iOS и Android</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                          <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576">
+                      </p>
+                  </li>
+                  <li class="template-item">
+                      <h3><a href="catalog-item.html">Barbershop</a></h3>
+                      <p class="template-description">Сайт салона<!--в макете почему-то было "салоны"--> красоты. Для мужчин, да.</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                          <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
+                      </p>
+                  </li>
+                  <li class="template-item">
+                      <h3><a href="catalog-item.html">Mishka</a></h3>
+                      <p class="template-description">Интернет-магазин  вязаных игрушек</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                          <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
+                      </p>
+                  </li>
+                  <li class="template-item">
+                      <h3><a href="catalog-item.html">A Plus</a></h3>
+                      <p class="template-description">Лендинг курсов повышения квалификации</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                          <img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
+                      </p>
+                  </li>
+                  <li class="template-item">
+                      <h3><a href="catalog-item.html">Кваст</a></h3>
+                      <p class="template-description">Промо-сайт производителя крафтового кваса</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                          <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
+                      </p>
+                  </li>
+              </ul>
+              <ul class="pagination-list">
+                  <li class="pagination-item pagination-item-current"><a>1</a></li>
+                  <li class="pagination-item"><a href="#">2</a></li>
+                  <li class="pagination-item"><a href="#">3</a></li>
+                  <li class="pagination-item"><a href="#">следующая</a></li>
+              </ul>
+          </section>
+      </main>
+      
+      <footer class="main-footer">
+          
+          <section class="feedback"> 
+              <h2 class="visually-hidden">Обратная связь</h2> 
+              <div class="map"></div> 
+              <div class="contacts"> 
+                  <p>NЁRDS DESIGN STUDIO</p> 
+                  <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p> 
+                  <p>тел. +7 (812) 275-75-75</p> 
+              </div> 
+              <div class="write-us"> 
+                  <h3>Напишите нам</h3> 
+              </div><!--Всплывающее окно с формой "Напишите нам"--> 
+          </section>
+          
+          <section class="social"> 
+              <h2 class="visually-hidden">Мы в социальных сетях</h2> 
+              <div class="social-description"> 
+                  <p><b>Давайте дружить, это выгодно!</b></p> 
+                  <p>Скидка 10% для друзей из социальных сетей.</p> 
+              </div> 
+              <ul class="social-media"> 
+                  <li><a href="#"><img src="img/vk-icon" alt="vk"></a></li> 
+                  <li><a href="#"><img src="img/fb-icon" alt="facebook"></a></li>  
+                  <li><a href="#"><img src="img/insta-icon" alt="instagram"></a></li> 
+              </ul> 
+          </section> 
+      </footer> 
+  </body> 
+</html> 
