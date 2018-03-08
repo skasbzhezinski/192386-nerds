@@ -5,14 +5,12 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>  
-     
-    <!-- <link type="text/css" rel="stylesheet" href="../auxillary-style.css"> -->
       
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p> --> 
        
         <header class="main-header"> 
           <nav class="main-navigation"> 
-              <a class="logo" href="index.html"><img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип студии Нёрдс"></a> 
+              <a class="logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a> 
               <ul class="site-navigation"> 
                   <li><a href="studio.html">студия</a></li> 
                   <li><a href="clientele.html">клиенты</a></li> 
@@ -81,7 +79,7 @@
                   </ul> 
               </div> 
               <div class="right"> 
-                  <img src="http://placehold.it/360x208" width="360" height="208" alt="Нёрдс иллюстрация"> 
+                  <img src="img/nerds-illustration.png" width="360" height="208" alt="Нёрдс иллюстрация"> 
                   <p>с 2004 года Любим точность во всем:</p>
                   
                   <ul class="percent">
@@ -105,16 +103,16 @@
               <h2 class="visually-hidden">Партнеры</h2> 
               <ul class="ref-list"> 
                   <li> 
-                      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/199x68" alt="html academy" width="199" height="68"></a> 
+                      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="html academy" width="199" height="68"></a> 
                   </li> 
                   <li> 
-                      <a href="#"><img src="http://placehold.it/209x90" alt="Barbershop Borodinski" width="209" height="90"></a> 
+                      <a href="#"><img src="img/logo-2.png" alt="Barbershop Borodinski" width="209" height="90"></a> 
                   </li> 
                   <li> 
-                      <a href="#"><img src="http://placehold.it/185x52" alt="pink" width="185" height="52"></a> 
+                      <a href="#"><img src="img/logo-3.png" alt="pink" width="185" height="52"></a> 
                   </li> 
                   <li> 
-                      <a href="#"><img src="http://placehold.it/173x84" alt="Mishka" width="173" height="84"></a> 
+                      <a href="#"><img src="img/logo-4.png" alt="Mishka" width="173" height="84"></a> 
                   </li> 
               </ul> 
           </section> 
@@ -122,8 +120,11 @@
        
       <footer class="main-footer"> 
           <section class="feedback"> 
-              <h2 class="visually-hidden">Обратная связь</h2> 
-              <div class="map"></div> 
+              <h2 class="visually-hidden">Обратная связь</h2>
+              
+              <!-- Все же карта в данном случае - контентное изображение, как мне кажется. Если не подключится ни JS ни CSS, пользователь должен видеть, где находится студия. Поэтому вставил: -->
+              <div class="map"><img src="img/Group-map.jpg" width="1440" height="416" alt="Мы здесь."></div>
+              
               <div class="contacts"> 
                   <p>NЁRDS DESIGN STUDIO</p> 
                   <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p> 
@@ -141,10 +142,10 @@
                   <p><b>Давайте дружить, это выгодно!</b></p> 
                   <p>Скидка 10% для друзей из социальных сетей.</p> 
               </div> 
-              <ul class="social-media"> 
-                  <li><a href="#"><img src="http://placehold.it/26x15" alt="vk" width="26" height="15"></a></li> 
-                  <li><a href="#"><img src="http://placehold.it/12x22" alt="facebook" width="12" height="22"></a></li>  
-                  <li><a href="#"><img src="http://placehold.it/21x21" alt="instagram" width="21" height="21"></a></li> 
+              <ul style="background-color: lightgray;" class="social-media"> <!-- Фон временный --> 
+                  <li><a href="#"><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li> 
+                  <li><a href="#"><img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a></li>  
+                  <li><a href="#"><img src="img/insta-icon.svg" alt="instagram" width="21" height="21"></a></li> 
               </ul> 
           </section> 
       </footer> 
