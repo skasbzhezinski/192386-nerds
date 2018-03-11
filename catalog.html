@@ -6,8 +6,6 @@
   </head>
   <body>
 
-     <link type="text/css" rel="stylesheet" href="../auxillary-style.css">
-
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p> -->
   
       <header class="main-header">
@@ -34,7 +32,7 @@
               <!-- Форма. Фильтр шаблонов -->
               <form class="templates-filter" action="https://echo.htmlacademy.ru" name="templates-filter" method="post">
                 <fieldset>
-                    <!--Временная заготовка. Здесь будет JavaScript-->
+                    <!--Временная заготовка. Здесь будет JavaScript (?) -->
                     <legend>СТОИМОСТЬ:</legend>
                     <p class="range">
                         <input type="range" name="price-range" min="0" max="15000" step="500">
@@ -46,7 +44,7 @@
                         </li>
                         <li>
                             <label for="price-to">ДО</label>
-                            <input type="number" name="price-from" id="price-to" min="500" max="15000" step="500" value="15 000">
+                            <input type="number" name="price-from" id="price-to" min="500" max="15000" step="500" value="15000">
                         </li>
                     </ul>
                 </fieldset>
@@ -107,9 +105,11 @@
 
               <ul class="sorting-list-appearing">
                   <li class="arrow sorting-item-active">
+                      <p class="visually-hidden">По возрастанию цены</p>
                       <button type="button"><img src="img/icon-up-dir.svg" alt="icon-up" width="11" height="10"></button>
                   </li>
                   <li class="arrow">
+                      <p class="visually-hidden">По убыванию цены</p>
                       <button type="button"><img src="img/icon-down-dir.svg" alt="icon-down" width="11" height="10"></button>
                   </li>
               </ul>
@@ -120,62 +120,63 @@
               <ul class="template-list">
                   <li class="template-item">
                       <a href="catalog-item.html">
-                          <h3>Sedona</h3>
-                          <p class="template-description">Информационный сайт  для туристов</p>
-                          <p class="template-image">
-                          <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
-                          </p>
+                              <h3>Sedona</h3>
                       </a>
+                      <p class="template-description">Информационный сайт  для туристов</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                      <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
+                      </p>
                   </li>
                   <li class="template-item">
                       <a href="catalog-item.html">
-                          <h3>Pink App</h3>
-                          <p class="template-description">Продуктовый лендинг приложения для iOS и Android</p>
-                          <span class="price">900 руб.</span>
-                          <p class="template-image">
-                          <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576">
-                          </p>
+                              <h3>Pink App</h3>
                       </a>
+                      <p class="template-description">Продуктовый лендинг приложения для iOS и Android</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                      <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576">
+                      </p>
                   </li>
                   <li class="template-item">
                       <a href="catalog-item.html">
-                          <h3>Barbershop</h3>
-                          <p class="template-description">Сайт салона красоты. Для мужчин, да.</p>
-                          <span class="price">900 руб.</span>
-                          <p class="template-image">
-                          <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
-                          </p>
+                              <h3>Barbershop</h3>
                       </a>
+                      <p class="template-description">Сайт салона красоты. Для мужчин, да.</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                      <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
+                      </p>
                   </li>
                   <li class="template-item">
                       <a href="catalog-item.html">
-                          <h3>Mishka</h3>
-                          <p class="template-description">Интернет-магазин  вязаных игрушек</p>
-                          <span class="price">900 руб.</span>
-                          <p class="template-image">
-                          <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
-                          </p>
+                              <h3>Mishka</h3>
                       </a>
+                      <p class="template-description">Интернет-магазин  вязаных игрушек</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                      <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
+                      </p>
                   </li>
                   <li class="template-item">
                       <a href="catalog-item.html">
-                          <h3>A Plus</h3>
-                          <p class="template-description">Лендинг курсов повышения квалификации</p>
-                          <span class="price">900 руб.</span>
-                          <p class="template-image">
-                          <img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
-                          </p>
+                              <h3>A Plus</h3>
                       </a>
+                      <p class="template-description">Лендинг курсов повышения квалификации</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                      <img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
+                      </p>
                   </li>
                   <li class="template-item">
                       <a href="catalog-item.html">
                           <h3>Кваст</h3>
-                          <p class="template-description">Промо-сайт производителя крафтового кваса</p>
-                          <span class="price">900 руб.</span>
-                          <p class="template-image">
-                          <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
-                          </p>
                       </a>
+                      <p class="template-description">Промо-сайт производителя крафтового кваса</p>
+                      <span class="price">900 руб.</span>
+                      <p class="template-image">
+                      <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
+                      </p>
                   </li>
               </ul>
               <ul class="pagination-list">
