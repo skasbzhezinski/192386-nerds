@@ -1,0 +1,612 @@
+/*
+          ***
+Стили для body
+*/
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Roboto Regular", Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+    
+    background-color: #fff;
+}
+
+/* Делаем элементы невидимыми */
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+/*
+          ***
+   Стилизация. Хедер
+*/
+
+/* Ссылки. Убираем подчеркивания */
+a {
+  text-decoration: none;
+}
+
+/* Стили главной навигации */
+.main-navigation {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+    text-transform: uppercase;
+    
+    background-color: rgb(238, 238, 238);
+}
+
+/* Переопределяем непрозрачность логотипа по нажатию и наведению */
+.main-navigation img:hover {
+    opacity: 0.8;
+}
+
+.main-navigation img:active {
+    opacity: 0.3;
+}
+
+/* Убираем маркеры списка */
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+/* Переопределяем цвет ссылок по умолчанию */
+.site-navigation a,
+.user-navigation a {
+  color: #000;
+}
+
+/* Цвет ссылок по наведению */
+.site-navigation a:hover,
+.user-navigation a:hover {
+    color: rgb(251, 81, 90);
+} 
+
+/* Цвет ссылок по нажатию и находимся на странице */
+.site-navigation a:active,
+.user-navigation a:active {
+    color: rgb(166, 166, 166);
+}
+
+/*  */   
+.site-navigation-current {
+    border-bottom: 2px solid rgb(251, 86, 90);
+}
+
+
+
+/*******************************************************************************************/
+/*       Страница каталога
+
+         main
+*/
+/* Главный заголовок страницы каталога */
+.catalog h1 {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+/* Убираем --обводку fieldset */
+.filter fieldset {
+    border: none;
+}
+
+/* --и маркеры пунктов у списков */
+.filter li {
+    list-style: none;
+}
+
+/* Параметры шрифта в legend */
+.list-header {
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Фон для элементов "Стоимость" */
+.filter .range,
+.filter input[type=number] {
+    background-color: #eeeeee;
+}
+/* Вопросы. А как же задать цвет полоске и вид движков? И как сделать, чтобы их было два? И как связать input type="range"
+ с type"number"? JS?*/
+
+ /* Параметры шрифта в "СТОИМОСТЬ:" */
+ .price-from-to label {
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #283136;
+ }
+
+/* Курсор */
+.filter input[type="range"],
+.filter input[type="number"] {
+    cursor: pointer;
+}
+
+ /* Поведение лейблов в разных состояниях */
+ /* --покой */
+ .type-item label,
+ .feature-item label {
+    color: #283136;
+ }
+
+ /* --наведение, фокус */
+.feature-item input:hover + label,
+.feature-item input:focus + label,
+.type-item input:hover + label,
+.type-item input:focus + label {
+    color: #000000;
+}
+
+/* --отключено */
+.type-item input:disabled + label {
+    color: #bec1c2;
+}
+
+/* Убираем дефолтную рамку */
+.filter input[type=number] {
+    border: none;
+}
+
+/* Кнопка "Показать" */
+.templates-filter input[type="submit"] {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 17px 90px;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 2px;
+}
+
+/* Состояния кнопки "показать" */
+.templates-filter input[type="submit"]:hover,
+.templates-filter input[type="submit"]:focus {
+    background-color: #dfdfdf;
+}
+
+.templates-filter input[type="submit"]:active {
+    color: #959595;
+    background-color: #d5d5d5;
+    box-shadow: inset 0 4px 0 0 #bfbfbf;
+}
+
+/* ВРЕМЕННО! */
+:focus {
+    outline: none;
+}
+
+/* Переопределяем стили для ссылок в сортировке */
+.sorting li {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.sorting a {
+    color: #b2b2b2;
+}
+
+/* Поведение ссылок */
+.sorting a:hover,
+.sorting a:focus {
+    color: #666666;
+}
+
+.sorting a:active {
+    color: #000000;
+}
+
+/* Поведение стрелок */
+.sorting-list-appearing img {
+    opacity: 0.2;
+}
+
+.sorting-list-appearing a:hover img,
+.sorting-list-appearing a:focus img {
+    opacity: 0.5;
+}
+
+.sorting-list-appearing a:active img,
+.current-arrow img {
+    opacity: 0.9;
+}
+
+/* Стили для карточек шаблонов */
+.templates .template-item {
+    background-color: #fff;
+}
+
+/* Заголовки шаблонов */
+.templates h3 {
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* убираем маркеры */
+.templates li {
+    list-style: none;
+}
+
+/* Фон всплывающего окна карточки шаблона */
+.templates .template-item {
+    background-color: #fff;
+}
+
+/* Блок с ценой */
+.templates .price {
+    font-family: "Rpboto Medium", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #fb565a;
+    padding: 17px 60px;
+    border-radius: 2px;
+}
+
+/* Горизонтальное выравнивание. (Блок с ценой будет выровнен на следующем этапе маргинами) */
+.template-item h3,
+.template-item .template-description {
+    text-align: center;
+}
+
+/* Поведение блока с ценой */
+.templates .price:hover,
+.templates .price:focus {
+    background-color: #e74246;
+}
+
+.templates .price:active {
+    background-color: #d7373b;
+}
+
+/* Стили для пагинатора */
+.pagination-list a {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+
+    list-style: none;
+    text-align: center;
+    background-color: #eeeeee;
+    border-radius: 2px;
+}
+
+/* Поведение кнопок пагинатора */
+.pagination-list a:hover,
+.pagination-list a:focus {
+    background-color: #dfdfdf;
+}
+
+.pagination-list a:active {
+    color: #bfbfbf;
+    background-color: #d5d5d5;
+    box-shadow: inset 2px 0 0 #bfbfbf;
+}
+
+.pagination-list .pagination-item-current {
+    background-color: #fff;
+    border: 3px solid #dbdbdb;
+}
+
+
+/*********************************************************************************************/
+/* Стили для слайдов */
+.top-slider {
+    background-color: rgb(238, 238, 238);
+}
+
+.top-slider h2 {
+    font-family: "Roboto Medium";
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.top-slider p {
+    font-family: "Roboto Regular";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Кнопка "узнать больше" */
+.top-slider .button {
+    font-family: Roboto Medium;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px 55px;
+    color: #fff;
+    background-color: rgb(251, 86, 90);
+    border-radius: 2px;
+}
+
+/* Состояния кнопки */
+.top-slider .button:hover {
+    background-color: #e74246;
+}
+
+.top-slider .button:active {
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.4);
+}
+     
+
+/* Предложения */
+
+.advantages li {
+    list-style: none;
+}
+
+.advantages h3 {
+    font-family: Roboto Bold, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.advantages .color-red {
+    background-color: #fb565a;
+}
+
+.advantages .color-green {
+    background-color: rgb(0, 202, 116);
+}
+
+.advantages .color-yellow {
+    background-color: rgb(239, 200, 74);
+}
+
+.advantages .button {
+    font-family: Roboto Medium;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 45px;
+    color: white;
+    border-radius: 2px;
+}
+
+/* Цвета состояния кнопок --по наведению */
+.advantages .color-red:hover {
+    background-color: rgb(231, 66, 70);
+}
+
+.advantages .color-green:hover {
+    background-color: rgb(0, 188, 108);
+}
+
+.advantages .color-yellow:hover {
+    background-color: rgb(234, 181, 52);
+}
+
+/* --по нажатию */
+.advantages .color-red:active {
+    background-color: rgb(215, 55, 59);
+    color: rgb(227, 115, 118);
+}
+
+.advantages .color-green:active {
+    background-color: rgb(0, 170, 98);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.advantages .color-yellow:active {
+    background-color: rgb(229, 167, 34);
+    color: rgba(255, 255, 255, 0.5);
+}
+/* Выравнивание текста в кнопках */
+.advantages .button {
+    text-align: center;
+}
+
+/* Выравнивание текста */
+.advantages h3,
+.advantages p {
+    text-align: left;
+}
+
+/* Преимущества */
+.studio b {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.studio .bold {
+    font-family: "Roboto Bold", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+/* Убираем маркеры списка заказов на разработку */
+.studio li {
+    list-style: none;
+    font-size: inherit;
+    font-weight: inherit;
+}
+/* "Проценты" */
+.percent span {
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/* Партнеры */
+.partners li {
+    list-style: none;
+}
+
+/* Переопределяем непрозрачность логотипов партнеров */
+.partners img {
+    opacity: 0.2;
+}
+
+/* Непрозрачность логотипов партнеров --по наведению */
+.partners img:hover {
+    opacity: 1;
+}
+
+/* --по нажатию */
+.partners img:active {
+    opacity: 0.1;
+}
+ 
+/*
+          ***
+         Футер
+*/
+
+/* Блок "напишите нам" */
+.contacts {
+   background-color: #ffffff; 
+}
+
+.contacts-title {
+    font-family: "Roboto Medium", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+} 
+
+/* Кнопка вызова модального окна "напишите нам" */
+.contacts .button {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px 55px;
+    color: #fff;
+    background-color: rgb(251, 86, 90);
+    border: none;
+    border-radius: 2px;
+}
+
+/* Модальное окно. Форма */
+.write-us {
+    background-color: #fff;
+    box-shadow: 0px 20px 100px 10px black;
+}
+
+.write-us h3 {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+/* Подписи к полям */
+.write-us label {
+    font-family: "Roboto Medium", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*  Поля формы */
+.write-us input,
+.write-us textarea{
+    font: inherit;
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.write-us input[type="email"]:invalid {
+    color: #e74246;
+    border-color: #e74246;
+}
+
+/* Кнопка отправки формы */
+.write-us input[type="submit"] {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px 55px;
+    color: #fff;
+    background-color: rgb(251, 86, 90);
+    border: none;
+    border-radius: 2px;
+}
+
+/* Социальные сети */
+.social-description b {
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.social li {
+    list-style: none;
+    background-color: #e1e1e1;
+}
+
+/* Поведение логотипов-ссылок */
+.social li:hover,
+.social li:focus {
+    background-color: #e74246;
+}
+
+.social li:active {
+    background-color: #d7373b;
+}
+
+.social li:active img {
+    opacity: 0.5;
+}
+
+/* Поведение кнопки выхода из модального окна --в покое */
+.write-us button[type="button"] img {
+    opacity: 0.5;
+}
+
+/* --по наведению, в фокусе */
+.write-us button[type="button"]:hover img,
+.write-us button[type="button"]:focus img {
+    opacity: 1;
+}
+
+/* --по нажатию */
+.write-us button[type="button"]:active img {
+    opacity: 0.2;
+}
+
+/* убираем дефолтную рамку */
+.write-us button[type="button"] {
+    border: none;
+    background-color: inherit; /* так и не понял откуда взялся у кнопки серый фон, пришлось убирать */
+}
