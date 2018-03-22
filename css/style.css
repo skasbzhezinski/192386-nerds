@@ -319,6 +319,10 @@ a {
 
 
 /*********************************************************************************************/
+/*         Главная страница
+
+           main
+*/
 /* Стили для слайдов */
 .top-slider {
     background-color: rgb(238, 238, 238);
@@ -366,6 +370,10 @@ a {
 /* Предложения */
 
 .advantages li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
     list-style: none;
 }
 
@@ -374,6 +382,7 @@ a {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .advantages .color-red {
@@ -626,3 +635,274 @@ a {
     border: none;
     background-color: inherit;
 }
+
+/******************************************************************************************/
+/*
+          ***
+     Сеточные стили
+*/
+
+html,
+body {
+    min-width: 1200px;
+    min-height: 2460px;
+}
+
+/*
+          ***
+         Хедер 
+*/
+
+/* Главная навигация */
+
+.main-navigation {
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 15px;
+}
+
+.main-navigation-container {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.site-navigation ,
+.user-navigation {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin-right: 40px;
+}
+
+.user-navigation {
+    width: 160px;
+    margin-left: auto;
+}
+
+.site-navigation li {
+    margin-right: 46px;
+}
+
+.logo {
+    width: 160px;
+    height: 65px;
+    margin-right: 200px;
+}
+
+/* Слайдер */
+
+.top-slider {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 120px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+.top-slider-container {
+    width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* Блок предложений */
+
+.advantages ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding-top: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.advantages li {
+    flex-grow: 1;
+    width: 380px;
+    padding: 0;
+    margin: 0;
+}
+
+.advantages {
+    margin-bottom: 100px;
+}
+
+/* Блок преимуществ */
+
+.studio {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto; 
+}
+
+.left {
+    width: 660px;
+}
+
+.right {
+    width: 370px;
+}
+
+/* Партнеры */
+.partners {
+    margin-bottom: 80px;
+}
+
+.partners .ref-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1200px;
+    padding-bottom: 45px;
+    margin: 0 auto;
+}
+
+.partners li {
+    min-width: 280px;
+}
+
+/*
+          ***
+         Футер 
+*/
+
+/* Блок с картой */
+.main-footer {
+    margin-top: 60px;
+}
+
+.map-container {
+    position: relative;
+    width: 1440px;
+    height: 416px;
+    margin: 0 auto;
+}
+
+.contacts {
+    position: absolute;
+    top: 55px;
+    left: 140px;
+    width: 320px;
+    padding: 50px;
+}
+
+/* Модальное окно с формой "Напишите нам" */
+
+/*
+.write-us {
+    position: fixed;
+    width: 960px;
+    height: 592px;
+    bottom: 180px;
+    right: 50%;
+    margin-right: -480px;
+}
+*/
+
+/* Блок социальных сетей */
+
+.social {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+
+.social-media {
+    display: flex;
+    order: 1;
+    margin-right: 140px;
+}
+
+.social-description {
+    order: 2;
+}
+
+/*
+          ***
+   Страница каталога
+*/
+
+.catalog {
+    width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* Заголовок страницы */
+.catalog h1 {
+    min-height: 55px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 105px;
+    padding-top: 60px;
+    margin-bottom: 55px;
+}
+
+/* Левая колонка фильтра с формой */
+.filter {
+    min-height: 775px;
+    width: 260px;
+}
+
+/* Правая колонка с сортировкой, шаблонами и пагинатором */
+.sorting-container {
+    min-height: 1990px;
+    width: 760px;
+}
+
+/* Общая обертка для колонок */
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+/* Размеры шаблонов и внешние отступы */
+.template-item {
+    min-height: 616px;
+    width: 360px;
+    margin-bottom: 34px;
+    margin-right: 40px;
+}
+
+/* Делаем список шаблонов флекс-контейнером */
+.template-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  
+    list-style: none;
+  }
+
+.template-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  /* Пагинатор */
+.pagination-list {
+    padding: 0;
+    margin: 0;
+  
+    list-style: none;  
+}
+/*********************************************************************************************/

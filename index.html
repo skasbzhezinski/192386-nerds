@@ -12,38 +12,42 @@
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p> --> 
        
       <header class="main-header"> 
-          <nav class="main-navigation"> 
-              <a class="logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a> 
-              <ul class="site-navigation"> 
-                  <li><a href="studio.html">студия</a></li> 
-                  <li><a href="clientele.html">клиенты</a></li> 
-                  <li><a href="catalog.html">магазин</a></li> 
-                  <li><a href="contacts.html">контакты</a></li>
-              </ul> 
-              <ul class="user-navigation">
-                  <li><a href="basket.html">корзина</a></li> 
-              </ul> 
+          <nav class="main-navigation">
+              <div class="main-navigation-container"><!-- Дополнительный флекс-контейнер -->
+                  <a class="logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a> 
+                  <ul class="site-navigation"> 
+                      <li><a href="studio.html">студия</a></li> 
+                      <li><a href="clientele.html">клиенты</a></li> 
+                      <li><a href="catalog.html">магазин</a></li> 
+                      <li><a href="contacts.html">контакты</a></li>
+                  </ul> 
+                  <ul class="user-navigation">
+                      <li><a href="basket.html">корзина</a></li> 
+                  </ul>
+              </div> 
           </nav> 
       </header>
        
       <main class="container"> 
           <section class="top-slider">
-              <!-- Активный слайд -->
-              <div class="slide-1"> 
-                  <h2>Долго, дорого, скрупулезно.</h2> 
-                  <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-                  <p><a class="button" href="#">узнать больше</a></p> 
-              </div>
-              <!-- Неактивны. Появляются при перелистывании -->
-              <div class="slide-2"> 
-                  <h2>Любим математику как никто другой</h2> 
-                  <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p> 
-                  <p><a class="button" href="#">узнать больше</a></p> 
-              </div> 
-              <div class="slide-3"> 
-                  <h2>Только ночь, только хардкор</h2> 
-                  <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p> 
-                  <p><a class="button" href="#">узнать больше</a></p> 
+              <div class="top-slider-container"><!-- Дополнительный контейнер-центровщик -->
+                  <!-- Активный слайд -->
+                  <div class="slide-1"> 
+                      <h2>Долго, дорого, скрупулезно.</h2> 
+                      <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                      <p><a class="button" href="#">узнать больше</a></p> 
+                  </div>
+                  <!-- Неактивны. Появляются при перелистывании -->
+                  <div class="slide-2"> 
+                      <h2>Любим математику как никто другой</h2> 
+                      <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p> 
+                      <p><a class="button" href="#">узнать больше</a></p> 
+                  </div> 
+                  <div class="slide-3"> 
+                      <h2>Только ночь, только хардкор</h2> 
+                      <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p> 
+                      <p><a class="button" href="#">узнать больше</a></p> 
+                  </div>
               </div> 
           </section> 
            
@@ -52,7 +56,7 @@
               <h2 class="visually-hidden">Предложения</h2> 
               <ul> 
                   <li> 
-                      <h3>Вебсайты</h3> 
+                      <h3>Веб-сайты</h3> 
                       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> 
                       <a class="button color-red" href="#">заказать</a> 
                   </li>
@@ -83,7 +87,7 @@
               </div> 
               <div class="right"> 
                   <img src="img/nerds-illustration.png" width="360" height="208" alt="Нёрдс иллюстрация"> 
-                  <p>с 2004 года Любим точность во всем:</p>
+                  <p class="bold">с 2004 года Любим точность во всем:</p>
                   
                   <ul class="percent">
                       <li>
@@ -125,21 +129,24 @@
           <section class="feedback"> 
               <h2 class="visually-hidden">Обратная связь</h2>
               
-              <!-- Все же карта в данном случае - контентное изображение, как мне кажется. Если не подключится ни JS ни CSS, пользователь должен видеть, где находится студия. Поэтому вставил: -->
-              <div class="map"><img src="img/Group-map.jpg" width="1440" height="416" alt="Мы здесь."></div>
+              <div class="map-container"><!-- Обертка для карты и блока "Контакты" --> 
+                  <!-- Все же карта в данном случае - контентное изображение, как мне кажется. Если не подключится ни JS ни CSS, пользователь должен видеть, где находится студия. Поэтому вставил: -->
+                  <div class="map"><img src="img/Group-map.jpg" width="1440" height="416" alt="Мы здесь."></div>
               
-              <!-- <div class="map-interactive">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.32089461598817!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1520660605694" width="1440" height="416" style="border:0" allowfullscreen></iframe>
-                  </div> -->
+                  <!-- <div class="map-interactive">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.32089461598817!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1520660605694" width="1440" height="416" style="border:0" allowfullscreen></iframe>
+                      </div> -->
               
-              <div class="contacts"> 
-                  <p class="contacts-title">NЁRDS DESIGN STUDIO</p> 
-                  <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p> 
-                  <p>тел. +7 (812) 275-75-75</p> 
+                  <div class="contacts"> 
+                      <p class="contacts-title">NЁRDS DESIGN STUDIO</p> 
+                      <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p> 
+                      <p>тел. +7 (812) 275-75-75</p>
+                      <button class="button">Напишите нам</button> 
+                  </div>
               </div>
               
               <!-- Модальное окно с формой "Напишите нам" --> 
-              <div class="write-us"> 
+              <div class="write-us visually-hidden"><!-- Скрывающий класс временно! --> 
                   <h3>Напишите нам</h3>
                   <form action="https://echo.htmlacademy.ru" name="write-us-form" method="post">
                       <p>
