@@ -5,34 +5,50 @@
 body {
     margin: 0;
     padding: 0;
-    
+
     font-family: "Roboto Regular", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: normal;
     color: #000000;
-    
+
     background-color: #fff;
 }
 
-/* Делаем элементы невидимыми */
-.visually-hidden {
+/* Глобальные стили */
+
+a {
+    text-decoration: none;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+/* Стили для скрывающего класса */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
+  
     width: 1px;
     height: 1px;
     margin: -1px;
-  }
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /*
           ***
    Стилизация. Хедер
 */
-
-/* Ссылки. Убираем подчеркивания */
-a {
-  text-decoration: none;
-}
 
 /* Стили главной навигации */
 .main-navigation {
@@ -42,7 +58,7 @@ a {
     font-weight: 500;
     color: #000;
     text-transform: uppercase;
-    
+
     background-color: rgb(238, 238, 238);
 }
 
@@ -71,15 +87,18 @@ a {
 .site-navigation a:hover,
 .user-navigation a:hover {
     color: rgb(251, 81, 90);
-} 
+}
 
 /* Цвет ссылок по нажатию и находимся на странице */
 .site-navigation a:active,
 .user-navigation a:active {
     color: rgb(166, 166, 166);
+    
 }
 
-/*  */   
+/* Нижний бордер по нажатию и  находимся на странице */
+.user-navigation a:active,
+.site-navigation a:active,
 .site-navigation-current {
     border-bottom: 2px solid rgb(251, 86, 90);
 }
@@ -125,8 +144,6 @@ a {
 .filter input[type=number] {
     background-color: #eeeeee;
 }
-/* Вопросы. А как же задать цвет полоске и вид движков? И как сделать, чтобы их было два? И как связать input type="range"
- с type"number"? JS?*/
 
  /* Параметры шрифта в "СТОИМОСТЬ:" */
  .price-from-to label {
@@ -178,7 +195,7 @@ a {
     padding: 17px 90px;
     background-color: #eeeeee;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 /* Состояния кнопки "показать" */
@@ -266,7 +283,7 @@ a {
     color: #ffffff;
     background-color: #fb565a;
     padding: 17px 60px;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 /* Горизонтальное выравнивание. (Блок с ценой будет выровнен на следующем этапе маргинами) */
@@ -297,7 +314,7 @@ a {
     list-style: none;
     text-align: center;
     background-color: #eeeeee;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 /* Поведение кнопок пагинатора */
@@ -306,13 +323,16 @@ a {
     background-color: #dfdfdf;
 }
 
-.pagination-list a:active {
+.pagination-list li:not(.pagination-item-current) a:active {
     color: #bfbfbf;
     background-color: #d5d5d5;
-    box-shadow: inset 2px 0 0 #bfbfbf;
+    box-shadow: inset 0 4px 0 #bfbfbf;
 }
 
-.pagination-list .pagination-item-current {
+.pagination-list .pagination-item-current a {
+    width: 44px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     background-color: #fff;
     border: 3px solid #dbdbdb;
 }
@@ -336,7 +356,7 @@ a {
 }
 
 .top-slider p {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -353,7 +373,7 @@ a {
     padding: 16px 55px;
     color: #fff;
     background-color: rgb(251, 86, 90);
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 /* Состояния кнопки */
@@ -365,7 +385,7 @@ a {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.4);
 }
-     
+
 
 /* Предложения */
 
@@ -406,7 +426,7 @@ a {
     text-align: center;
     padding: 16px 45px;
     color: white;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 /* Цвета состояния кнопок --по наведению */
@@ -449,14 +469,14 @@ a {
 }
 
 /* Преимущества */
-.studio b {
+.studio h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
 }
 
-.studio .bold {
+.studio h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -497,7 +517,7 @@ a {
 .partners img:active {
     opacity: 0.1;
 }
- 
+
 /*
           ***
          Футер
@@ -505,7 +525,7 @@ a {
 
 /* Блок "напишите нам" */
 .contacts {
-   background-color: #ffffff; 
+   background-color: #ffffff;
 }
 
 .contacts-title {
@@ -514,7 +534,7 @@ a {
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
-} 
+}
 
 /* Кнопка вызова модального окна "напишите нам" */
 .contacts .button {
@@ -645,18 +665,16 @@ a {
 html,
 body {
     min-width: 1200px;
-    min-height: 2460px;
 }
 
 /*
           ***
-         Хедер 
+         Хедер
 */
 
 /* Главная навигация */
 
 .main-navigation {
-    width: 100%;
     padding-top: 48px;
     padding-bottom: 15px;
 }
@@ -681,7 +699,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 600px;
-    margin-right: 40px;
 }
 
 .user-navigation {
@@ -705,8 +722,6 @@ body {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 120px;
-    padding-right: 20px;
-    padding-left: 20px;
     margin: 0 auto;
 }
 
@@ -722,7 +737,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    padding-top: 250px;
+    padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
@@ -749,7 +764,7 @@ body {
     padding-bottom: 80px;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .left {
@@ -767,20 +782,38 @@ body {
 
 .partners .ref-list {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     width: 1200px;
     padding-bottom: 45px;
     margin: 0 auto;
 }
 
+/* По картинке с наименьшей шириной */
 .partners li {
-    min-width: 280px;
+    min-width: 210px;
+}
+
+/* Выравниваю по PerfectPixel (Ни align-items: center; ни justify-content не помогли) */
+.partners li:nth-child(1) {
+    margin-right: 85px;
+}
+
+.partners li:nth-child(2) {
+    margin-top: -18px;
+    margin-right: 103px;
+}
+
+.partners li:nth-child(3) {
+    margin-right: 98px;
+    
+}
+
+.partners li:nth-child(4) {
+    margin-top: -12px;
 }
 
 /*
           ***
-         Футер 
+         Футер
 */
 
 /* Блок с картой */
@@ -793,6 +826,7 @@ body {
     width: 1440px;
     height: 416px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .contacts {
@@ -890,7 +924,7 @@ body {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-  
+
     list-style: none;
   }
 
@@ -900,9 +934,23 @@ body {
 
   /* Пагинатор */
 .pagination-list {
+    display: flex;
     padding: 0;
     margin: 0;
-  
-    list-style: none;  
+
+    list-style: none;
 }
+
+.pagination-item a {
+    display: block;
+    width: 50px;
+    margin-right: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.pagination-item-next a {
+    width: 260px;
+}
+
 /*********************************************************************************************/
