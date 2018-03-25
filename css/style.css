@@ -110,6 +110,7 @@ input[type="radio"].visually-hidden {
 
          main
 */
+
 /* Главный заголовок страницы каталога */
 .catalog h1 {
     font-family: 'Roboto', sans-serif;
@@ -370,7 +371,10 @@ input[type="radio"].visually-hidden {
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    padding: 16px 55px;
+    padding-top: 17px;
+    padding-bottom: 18px;
+    padding-left: 55px;
+    padding-right: 55px;
     color: #fff;
     background-color: rgb(251, 86, 90);
     border-radius: 3px;
@@ -544,11 +548,11 @@ input[type="radio"].visually-hidden {
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    padding: 16px 55px;
+    padding: 17px 45px;
     color: #fff;
     background-color: rgb(251, 86, 90);
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 /* Модальное окно. Форма */
@@ -679,12 +683,16 @@ body {
     padding-bottom: 15px;
 }
 
-.main-navigation-container {
-    display: flex;
-    align-items: center;
+/* Для всех флекс-контейнеров */
+div[class$="-container"] {
     width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+.main-navigation-container {
+    display: flex;
+    align-items: center;  
 }
 
 .site-navigation ,
@@ -725,12 +733,6 @@ body {
     margin: 0 auto;
 }
 
-.top-slider-container {
-    width: 1200px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
 /* Блок предложений */
 
 .advantages ul {
@@ -738,9 +740,11 @@ body {
     justify-content: space-between;
     width: 1200px;
     padding-top: 80px;
+    padding-bottom: 98px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
+    border-bottom: 3px solid #eeeeee;
 }
 
 .advantages li {
@@ -750,10 +754,6 @@ body {
     margin: 0;
 }
 
-.advantages {
-    margin-bottom: 100px;
-}
-
 /* Блок преимуществ */
 
 .studio {
@@ -761,10 +761,11 @@ body {
     justify-content: space-between;
     width: 1200px;
     padding-top: 90px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
+    border-bottom: 3px solid #eeeeee;
 }
 
 .left {
@@ -782,17 +783,24 @@ body {
 
 .partners .ref-list {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 1200px;
-    padding-bottom: 45px;
+    padding-bottom: 44px;
+    padding-top: 44px;
     margin: 0 auto;
+
+    border-bottom: 3px solid #eeeeee;
 }
 
-/* По картинке с наименьшей шириной */
+/* Выравниваю лого партнеров */
 .partners li {
+    padding-left: 30px;
     min-width: 210px;
+    width: 25%;
 }
 
-/* Выравниваю по PerfectPixel (Ни align-items: center; ни justify-content не помогли) */
+/* Выравниваю по PerfectPixel (Ни align-items: center; ни justify-content не помогли) 
 .partners li:nth-child(1) {
     margin-right: 85px;
 }
@@ -809,7 +817,7 @@ body {
 
 .partners li:nth-child(4) {
     margin-top: -12px;
-}
+} */
 
 /*
           ***
@@ -821,20 +829,39 @@ body {
     margin-top: 60px;
 }
 
-.map-container {
+.map-wrapper {
     position: relative;
     width: 1440px;
     height: 416px;
-    margin: 0 auto;
+    margin: 0 0;
+    margin-left: calc(50% - 720px);
     margin-bottom: 40px;
 }
 
+.contacts p {
+    margin: 0;
+    padding: 0px;
+}
+
 .contacts {
+    box-sizing: content-box;
     position: absolute;
     top: 55px;
-    left: 140px;
-    width: 320px;
+    left: 120px;
+    max-width: 320px;
     padding: 50px;
+}
+
+.contacts .contacts-title {
+    padding-bottom: 22px;
+}
+
+.contacts .address {
+    padding-bottom: 19px;
+}
+
+.contacts .phone {
+    padding-bottom: 38px;
 }
 
 /* Модальное окно с формой "Напишите нам" */
@@ -898,7 +925,7 @@ body {
 }
 
 /* Правая колонка с сортировкой, шаблонами и пагинатором */
-.sorting-container {
+.sorting-wrapper {
     min-height: 1990px;
     width: 760px;
 }
