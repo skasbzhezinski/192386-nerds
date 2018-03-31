@@ -187,6 +187,10 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
+.filter-cost {
+    
+}
+
 .templates-filter .filter-input + label {
     min-width: 260px;
     margin-bottom: 21px; /* регулирует вертикальные отступы между инпутами */
@@ -536,7 +540,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
     text-transform: uppercase;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     padding-left: 55px;
     padding-right: 55px;
     color: #fff;
@@ -1257,6 +1261,76 @@ div[class$="-container"] {
 
 /*  --------  */
 /* Слайдер */
+.top-slider {
+    position: relative;
+}
+
+/* Переключатели слайдера */
+.slider-controls i {
+    position: relative;
+    
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+    
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls i::after {
+    content: "";
+    
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    
+    width: 18px;
+    height: 18px;
+    
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.slider-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 104px;
+    z-index: 100;
+    
+    width: 160px;
+    height: 18px;
+  
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
+}
+
+/* Активный переключатель */
+.slider-controls .active::before {
+    content: "";
+    
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+
+    width: 4px;
+    height: 4px;
+
+    background: #ffffff;
+    border: 3px solid #c1c1c1;
+    border-radius: 50%;
+}
+
+.container-centering {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 .slide h3,
 .slide p {
     margin: 0;
@@ -1286,7 +1360,13 @@ div[class$="-container"] {
     padding-bottom: 95px;
 }
 
+.slide {
+    padding: 78px 0 80px 0;
+}
+
 .slide-1 {
+    
+
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
     background-position: 430px 0px;
@@ -1298,7 +1378,7 @@ div[class$="-container"] {
 
     background-image: url("../img/slide2.png");
     background-repeat: no-repeat;
-    background-position: 490px -16px;
+    background-position: 500px -16px;
     background-clip: unset;
 }
 
