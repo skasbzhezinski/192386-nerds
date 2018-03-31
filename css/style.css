@@ -98,9 +98,6 @@ input[type="radio"].visually-hidden {
     
 }
 
-/* Нижний бордер по нажатию и  находимся на странице */
-
-
 /*******************************************************************************************/
 /*       Страница каталога
 
@@ -879,9 +876,14 @@ input[type="radio"].visually-hidden {
     left: 50%;
     bottom: 180px;
     margin-left: -480px;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 10;
 
-    width: 960px;
-    height: 590px;
+    width: 760px;
+    min-height: 420px;
     background-color: #fff;
     box-shadow: 0px 20px 100px 10px black;
 }
@@ -890,7 +892,56 @@ input[type="radio"].visually-hidden {
     font-family: "Roboto", sans-serif;
     font-size: 45px;
     line-height: 45px;
-    font-weight: 500;
+    font-weight: 500;    
+}
+
+.write-us h3,
+.write-us p {
+    padding: 0;
+    margin: 0;
+}
+
+.write-us h3 {
+    margin-bottom: 40px;
+}
+
+.write-us p {
+    margin-bottom: 12px;
+}
+
+.write-us label {
+    margin-bottom: 10px;
+}
+
+.write-us input {
+    height: 24px;
+}
+
+.top-line-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 760px;
+    margin-bottom: 18px;
+}
+
+.top-line input {
+    min-width: 340px;
+}
+
+.bottom-line {
+    width: 740px;
+}
+
+.bottom-line textarea {
+    width: 100%;
+    min-height: 92px;
+    margin-bottom: 36px;
+}
+
+p[class$="-line"] {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Подписи к полям */
@@ -909,10 +960,10 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     font-weight: 400;
     border: 2px solid #d7dcde;
-    border-radius: 2px;
+    border-radius: 3px;
     padding-left: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: #8f8f8f;
 }
 
@@ -929,11 +980,23 @@ input[type="radio"].visually-hidden {
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    padding: 16px 55px;
+    padding-bottom: 32px;
+    padding-top: 16px;
+    padding-left: 84px;
+    padding-right: 84px;
+    margin-bottom: 82px;
+
     color: #fff;
     background-color: rgb(251, 86, 90);
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
+}
+
+/* Кнопка выхода из модального окна */
+.close-button {
+    position: absolute;
+    top: 78px;
+    right: 84px; 
 }
 
 /* Блок социальных сетей */
@@ -1025,6 +1088,7 @@ input[type="radio"].visually-hidden {
 .write-us button[type="button"] {
     border: none;
     background-color: inherit;
+    cursor: pointer;
 }
 
 /* Блок с картой */
@@ -1034,7 +1098,7 @@ input[type="radio"].visually-hidden {
 
 .map-wrapper {
     position: relative;
-    width: 1440px;
+    min-width: 1200px;
     height: 416px;
     margin: 0 0;
     margin-left: calc(50% - 720px);
@@ -1487,19 +1551,6 @@ div[class$="-container"] {
 }
 
 /*  --------  */
-
-/* Модальное окно с формой "Напишите нам" */
-
-/* 
-.write-us {
-    position: fixed;
-    width: 960px;
-    height: 592px;
-    bottom: 180px;
-    right: 50%;
-    margin-right: -480px;
-}
-*/
 
 /*
           ***

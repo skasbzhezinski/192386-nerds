@@ -232,27 +232,29 @@
             </div>
             
             <!-- Модальное окно с формой "Напишите нам" -->
-            <div class="write-us visually-hidden"><!-- Скрывающий класс временно! -->  
+            <div class="write-us"><!-- Скрывающий класс временно! -->  
                 <h3>Напишите нам</h3>
                 <form action="https://echo.htmlacademy.ru" name="write-us-form" method="post">
-                    <p>
-                        <label for="write-us-form-name">Ваше имя:</label><br>
-                        <input type="text" name="name" id="write-us-form-name" placeholder="Имя Фамилия">
-                    </p>
-                    <p>
-                        <label for="write-us-form-email">Ваш e-mail:</label><br>
-                        <input type="email" name="mail" id="write-us-form-email" placeholder="email@example.com">
-                    </p>
-                    <p>
-                        <label for="write-us-form-text">Текст письма:</label><br>
-                        <textarea name="text" id="write-us-form-text" >В свободной форме</textarea>
+                    <div class="top-line-wrapper">
+                        <p class="top-line">
+                            <label for="write-us-form-name">Ваше имя:</label>
+                            <input type="text" name="name" id="write-us-form-name" placeholder="Имя Фамилия">
+                        </p>
+                        <p class="top-line">
+                            <label for="write-us-form-email">Ваш e-mail:</label>
+                            <input type="email" name="mail" id="write-us-form-email" placeholder="email@example.com">
+                        </p>
+                    </div>
+                    <p class="bottom-line">
+                        <label for="write-us-form-text">Текст письма:</label>
+                        <textarea name="text" id="write-us-form-text">В свободной форме</textarea>
                     </p>
                     
                     <h3 class="visually-hidden">Кнопка отправки формы</h3>
-                    <input type="submit" value="ОТПРАВИТЬ">
+                    <input type="submit" placeholder="ОТПРАВИТЬ">
                     
                     <h3 class="visually-hidden">Кнопка выхода из окна с формой</h3>
-                    <button type="button"><img src="img/close-cross.svg" alt="close-cross" width="21" height="21"></button>
+                    <button class="close-button" type="button"><img src="img/close-cross.svg" alt="close-cross" width="21" height="21"></button>
                 </form>
             </div>
         </section>
