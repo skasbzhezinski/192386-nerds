@@ -164,7 +164,15 @@ input[type="radio"].visually-hidden {
 }
 
 .filter .list-header {
-    margin-bottom: 25px;
+    margin-bottom: 12px;
+}
+
+.filter .cost-header {
+    margin-bottom: 50px; 
+}
+
+.filter .filter-cost {
+    margin-bottom: 55px;
 }
 
 /* Убираем --обводку fieldset */
@@ -172,8 +180,11 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     border: none;
+}
 
-    margin-bottom: 55px;
+.filter .filter-grid,
+.filter .filter-features {
+    margin-bottom: 28px;
 }
 
 /* --и маркеры пунктов у списков */
@@ -187,13 +198,98 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.filter-cost {
+/* Блок с ползунками */
+.range-controls {
+    position: relative;
+
+    height: 41px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
     
+    background-color: #f1f1f1;
+    
+    border-radius: 5px;
 }
 
-.templates-filter .filter-input + label {
+/* полоска между ползунками */
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+  
+    background: #00ca74;
+}
+
+/* ползунки */
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+
+    width: 4px;
+    height: 4px;
+    padding: 0;
+  
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* позиции ползунков на шкале */
+.range-controls .toggle-min {
+    left: 18px;
+}
+  
+.range-controls .toggle-max {
+    left: 160px;
+}
+
+/* нижняя часть */
+.price-controls {
+    font-size: 0;
+}
+  
+.price-controls label {
+    display: inline-block;
+    width: 50%;
+    
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* поля ввода */
+.price-controls input {
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+
+    font-family: "Roboto", Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+
+.max-price {
+    text-align: right;
+}
+
+/* вся полоска */
+.range-controls .scale {
+    height: 2px;
+  
+    background: #d7dcde;
+}
+
+.filter-input + label {
     min-width: 260px;
-    margin-bottom: 21px; /* регулирует вертикальные отступы между инпутами */
+    margin-bottom: 12px; /* регулирует вертикальные отступы между инпутами */
     padding-left: 37px;
     
     /*background: rgba(0, 128, 0, 0.2);
@@ -204,7 +300,6 @@ input[type="radio"].visually-hidden {
 .filter-features label {
     padding-top: 4px; /* регулирует вертикальные отступы между инпутами 
                       и центрирует текст относительно иконки*/
-
     display: block;
 
     cursor: pointer;
@@ -364,7 +459,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
     list-style: none;
 }
 
@@ -400,7 +495,7 @@ input[type="radio"].visually-hidden {
     margin-right: 240px;
 }
 
-/* колонка с сортировкой, шаблонами и пагинатором (Правая) */
+/* Колонка с сортировкой, шаблонами и пагинатором (Правая) */
 
 
 /* Стили для карточек шаблонов */
@@ -1519,8 +1614,7 @@ div[class$="-container"] {
     width: 50px;
     margin-right: 10px;
     padding-top: 17px;
-    padding-bottom: 17px;
-    vertical-align: middle;
+    padding-bottom: 16px;
 }
 
 .pagination-item-next a {

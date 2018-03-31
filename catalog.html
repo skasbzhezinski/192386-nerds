@@ -38,21 +38,20 @@
                   <!-- Форма. Фильтр шаблонов -->
                   <form class="templates-filter" action="https://echo.htmlacademy.ru" name="templates-filter" method="post">
                     <fieldset class="filter-cost">
-                        <!--Временная заготовка. Здесь будет JavaScript (?) -->
-                        <legend class="list-header">СТОИМОСТЬ:</legend>
-                        <p class="range">
-                            <input type="range" name="price-range" min="0" max="15000" step="500">
-                        </p>
-                        <ul class="price-from-to">
-                            <li>
-                                <label for="price-from">ОТ</label>
-                                <input type="number" name="price-from" id="price-from" min="0" max="14500" step="500" value="0">
-                            </li>
-                            <li>
-                                <label for="price-to">ДО</label>
-                                <input type="number" name="price-from" id="price-to" min="500" max="15000" step="500" value="15000">
-                            </li>
-                        </ul>
+                        <legend class="list-header cost-header">Стоимость:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset class="filter-grid">
                         <legend class="list-header">СЕТКА:</legend>
