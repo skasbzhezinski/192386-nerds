@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
 
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p> -->
   
@@ -22,15 +22,15 @@
                       <li><a href="contacts.html">контакты</a></li>
                   </ul>
                   <ul class="user-navigation">
-                      <li><a href="basket.html">корзина</a></li>
+                      <li><a class="basket" href="basket.html">корзина</a></li>
                   </ul>
               </div>
+              <h1 class="inner-heading">Магазин готовых шаблонов</h1>
           </nav>
+
       </header>
 
       <main class="catalog">
-          
-          <h1>Магазин готовых шаблонов</h1>
 
           <div class="catalog-columns"> <!-- Контейнер для колонок каталога -->
               <section class="filter">
@@ -58,15 +58,15 @@
                         <legend class="list-header">СЕТКА:</legend>
                         <ul>
                             <li class="type-item">
-                                <input type="radio" name="templates-raio-button" id="radio-templates-adaptive" value="Адаптивная" checked>
+                                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="templates-radio-button" id="radio-templates-adaptive" value="Адаптивная" checked>
                                 <label for="radio-templates-adaptive">Адаптивная</label>
                             </li>
                             <li class="type-item">
-                                <input type="radio" name="templates-raio-button" id="radio-templates-fixed" value="fixed" disabled>
+                                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="templates-radio-button" id="radio-templates-fixed" value="fixed" disabled>
                                 <label for="radio-templates-fixed">Фиксированная</label>
                             </li>
                             <li class="type-item">
-                                <input type="radio" name="templates-raio-button" id="radio-templates-stretchable" value="stretchable">
+                                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="templates-radio-button" id="radio-templates-stretchable" value="stretchable">
                                 <label for="radio-templates-stretchable">Резиновая</label> 
                             </li>
                         </ul>
@@ -75,23 +75,23 @@
                         <legend class="list-header">ОСОБЕННОСТИ:</legend>
                         <ul>        
                             <li class="feature-item">
-                                <input type="checkbox" name="templates-filter-slider" id="templates-filter-slider" value="slider" checked>
+                                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="templates-filter-slider" id="templates-filter-slider" value="slider" checked>
                                 <label for="templates-filter-slider">Слайдер</label>
                             </li>
                             <li class="feature-item">
-                                <input type="checkbox" name="templates-filter-features-block" id="templates-filter-features-block" value="features-block">
+                                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="templates-filter-features-block" id="templates-filter-features-block" value="features-block" disabled>
                                 <label for="templates-filter-features-block">Блок преимуществ</label>
                             </li>
                             <li class="feature-item">
-                                <input type="checkbox" name="templates-filter-news" id="templates-filter-news" value="news" checked>
+                                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="templates-filter-news" id="templates-filter-news" value="news" checked>
                                 <label for="templates-filter-news">Новости</label>
                             </li>
                             <li class="feature-item">
-                                <input type="checkbox" name="templates-filter-gallery" id="templates-filter-gallery" value="gallery">
+                                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="templates-filter-gallery" id="templates-filter-gallery" value="gallery">
                                 <label for="templates-filter-gallery">Галерея</label>
                             </li>
                             <li class="feature-item">
-                                <input type="checkbox" name="templates-filter-basket" id="templates-filter-basket" value="basket">
+                                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="templates-filter-basket" id="templates-filter-basket" value="basket">
                                 <label for="templates-filter-basket">Корзина</label>
                             </li>
                         </ul>
@@ -114,11 +114,11 @@
                       <ul class="sorting-list-appearing">
                           <li class="arrow sorting-item-active">
                               <p class="visually-hidden">По возрастанию цены</p>
-                              <a class="current-arrow" href="#"><img src="img/icon-up-dir.svg" alt="icon-up" width="11" height="10"></a>
+                              <a class="current-arrow" href="#"><img src="img/icon-down-dir.svg" alt="icon-up" width="11" height="10"></a>
                           </li>
                           <li class="arrow">
                               <p class="visually-hidden">По убыванию цены</p>
-                              <a href="#"><img src="img/icon-down-dir.svg" alt="icon-down" width="11" height="10"></a>
+                              <a href="#"><img src="img/icon-up-dir.svg" alt="icon-down" width="11" height="10"></a>
                           </li>
                       </ul>
                   </section>
@@ -129,61 +129,73 @@
                           <li class="template-item">
                               <!-- Временно сделаем невидимыми заголовки,
                                  надписи и кнопки с ценой у шаблонов -->
-                              <h3 class="visually-hidden">
-                                  <a href="catalog-item.html">Sedona</a>
-                              </h3>
-                              <p class="template-description visually-hidden">Информационный сайт  для туристов</p>
-                              <span class="price visually-hidden">9 900 руб.</span>
+                              <div class="template-description-block">
+                                  <h3>
+                                      <a href="catalog-item.html">Sedona</a>
+                                  </h3>
+                                  <p class="template-description">Информационный сайт  для туристов</p>
+                                  <span class="price">9 900 руб.</span>
+                              </div>
                               <p class="template-image">
                               <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
                               </p>
                           </li>
                           <li class="template-item">
-                              <h3 class="visually-hidden">
-                                  <a href="catalog-item.html">Pink App</a>
-                              </h3>
-                              <p class="template-description visually-hidden">Продуктовый лендинг приложения для iOS и Android</p>
-                              <span class="price visually-hidden">9 900 руб.</span>
+                              <div class="template-description-block">
+                                  <h3>
+                                      <a href="catalog-item.html">Pink App</a>
+                                  </h3>
+                                  <p class="template-description">Продуктовый лендинг приложения для iOS и Android</p>
+                                  <span class="price">9 900 руб.</span>
+                              </div>
                               <p class="template-image">
                               <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576">
                               </p>
                           </li>
                           <li class="template-item">
-                              <h3 class="visually-hidden">
-                                  <a href="catalog-item.html">Barbershop</a>
-                              </h3>
-                              <p class="template-description visually-hidden">Сайт салона красоты. Для мужчин, да.</p>
-                              <span class="price visually-hidden">9 900 руб.</span>
+                              <div class="template-description-block">
+                                  <h3>
+                                      <a href="catalog-item.html">Barbershop</a>
+                                  </h3>
+                                  <p class="template-description">Сайт салона красоты. Для мужчин, да.</p>
+                                  <span class="price">9 900 руб.</span>
+                              </div>
                               <p class="template-image">
                               <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
                               </p>
                           </li>
                           <li class="template-item">
-                              <h3 class="visually-hidden">
-                                  <a href="catalog-item.html">Mishka</a>
-                              </h3>
-                              <p class="template-description visually-hidden">Интернет-магазин  вязаных игрушек</p>
-                              <span class="price visually-hidden">9 900 руб.</span>
+                              <div class="template-description-block">
+                                  <h3>
+                                      <a href="catalog-item.html">Mishka</a>
+                                  </h3>
+                                  <p class="template-description">Интернет-магазин  вязаных игрушек</p>
+                                  <span class="price">9 900 руб.</span>
+                              </div>
                               <p class="template-image">
                               <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
                               </p>
                           </li>
                           <li class="template-item">
-                              <h3 class="visually-hidden">
-                                  <a href="catalog-item.html">A Plus</a>
-                              </h3>
-                              <p class="template-description visually-hidden">Лендинг курсов повышения квалификации</p>
-                              <span class="price visually-hidden">9 900 руб.</span>
+                              <div class="template-description-block">
+                                  <h3>
+                                      <a href="catalog-item.html">A Plus</a>
+                                  </h3>
+                                  <p class="template-descriptionon">Лендинг курсов повышения квалификации</p>
+                                  <span class="price">9 900 руб.</span>
+                              </div>
                               <p class="template-image">
                               <img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
                               </p>
                           </li>
                           <li class="template-item">
-                              <h3 class="visually-hidden">
-                                  <a href="catalog-item.html">Кваст</a>
-                              </h3>
-                              <p class="template-description visually-hidden">Промо-сайт производителя крафтового кваса</p>
-                              <span class="price visually-hidden">9 900 руб.</span>
+                              <div class="template-description-block">
+                                  <h3>
+                                      <a href="catalog-item.html">Кваст</a>
+                                  </h3>
+                                  <p class="template-description">Промо-сайт производителя крафтового кваса</p>
+                                  <span class="price">9 900 руб.</span>
+                              </div>
                               <p class="template-image">
                               <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
                               </p>
@@ -246,6 +258,7 @@
             </div>
         </section>
         
+        <div class="social-container"> <!-- Контейнер-центровщик -->
         <section class="social"> 
             <h2 class="visually-hidden">Мы в социальных сетях</h2> 
             <div class="social-description"> 
@@ -253,11 +266,12 @@
                 <p>Скидка 10% для друзей из социальных сетей.</p> 
             </div> 
             <ul class="social-media"> 
-                <li><a href="#"><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li> 
-                <li><a href="#"><img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a></li>  
-                <li><a href="#"><img src="img/insta-icon.svg" alt="instagram" width="21" height="21"></a></li> 
+                <li><a class="network" href="#"><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li> 
+                <li><a class="network" href="#"><img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a></li>  
+                <li><a class="network" href="#"><img src="img/insta-icon.svg" alt="instagram" width="21" height="21"></a></li> 
             </ul> 
-        </section> 
+        </section>
+        </div> 
     </footer>
   </body>
 </html>
