@@ -139,10 +139,10 @@
               <div class="map-wrapper"><!-- Обертка для карты и блока "Контакты" --> 
                   <!-- Все же карта в данном случае - контентное изображение, как мне кажется. Если не подключится ни JS ни CSS, пользователь должен видеть, где находится студия. Поэтому вставил: -->
                   <div class="map"><img src="img/Group-map.jpg" width="1440" height="416" alt="Мы здесь."></div>
-              
-                  <!-- <div class="map-interactive">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.32089461598817!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1520660605694" width="1440" height="416" style="border:0" allowfullscreen></iframe>
-                      </div> -->
+                  
+                  <div class="map-interactive">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.32089461598817!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1520660605694" width="100%" height="416" style="border:0" allowfullscreen></iframe>
+                  </div> 
               
                   <div class="contacts"> 
                       <p class="contacts-title">NЁRDS DESIGN STUDIO</p> 
@@ -153,17 +153,19 @@
               </div>
               
               <!-- Модальное окно с формой "Напишите нам" --> 
-              <div class="write-us"><!-- Скрывающий класс временно! --> 
+              <div class="write-us visually-hidden"><!-- Скрывающий класс временно! --> 
                   <h3>Напишите нам</h3>
                   <form action="https://echo.htmlacademy.ru" name="write-us-form" method="post">
-                      <p class="top-line">
-                          <label for="write-us-form-name">Ваше имя:</label><br>
-                          <input type="text" name="name" id="write-us-form-name" placeholder="Имя Фамилия">
-                      </p>
-                      <p class="top-line">
-                          <label for="write-us-form-email">Ваш e-mail:</label><br>
-                          <input type="email" name="mail" id="write-us-form-email" placeholder="email@example.com">
-                      </p>
+                      <div class="top-line-wrapper">
+                          <p class="top-line">
+                              <label for="write-us-form-name">Ваше имя:</label><br>
+                              <input type="text" name="name" id="write-us-form-name" placeholder="Имя Фамилия">
+                          </p>
+                          <p class="top-line">
+                              <label for="write-us-form-email">Ваш e-mail:</label><br>
+                              <input type="email" name="mail" id="write-us-form-email" placeholder="email@example.com">
+                          </p>
+                      </div>
                       <p class="bottom-line">
                           <label for="write-us-form-text">Текст письма:</label><br>
                           <textarea name="text" id="write-us-form-text" placeholder="В свободной форме"></textarea>
@@ -173,7 +175,7 @@
                       <input type="submit" value="ОТПРАВИТЬ">
                       
                       <h3 class="visually-hidden">Кнопка выхода из окна с формой</h3>
-                      <button class="close-button" type="button"><img src="img/close-cross.svg" alt="close-cross" width="21" height="21"></button>
+                      <button class="button close-button" type="button"><img src="img/close-cross.svg" alt="close-cross" width="21" height="21"></button>
                   </form>
               </div>
           </section>

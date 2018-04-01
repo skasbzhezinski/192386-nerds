@@ -25,6 +25,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+:focus {
+     outline: none; /* Стили для этого состояния прописаны явно */
+}
   
 /* Стили для скрывающего класса */
 .visually-hidden:not(:focus):not(:active),
@@ -40,7 +44,9 @@ input[type="radio"].visually-hidden {
   
     white-space: nowrap;
   
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+  
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -230,7 +236,8 @@ input[type="radio"].visually-hidden {
   
     border: 8px solid #ffffff;
     background-color: #ababab;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
+    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+            box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -300,7 +307,10 @@ input[type="radio"].visually-hidden {
     display: block;
 
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 /* Поведение лейблов в разных состояниях */
@@ -403,7 +413,8 @@ input[type="radio"].visually-hidden {
 .templates-filter input[type="submit"]:active {
     color: #959595;
     background-color: #d5d5d5;
-    box-shadow: inset 0 4px 0 0 #bfbfbf;
+    -webkit-box-shadow: inset 0 4px 0 0 #bfbfbf;
+            box-shadow: inset 0 4px 0 0 #bfbfbf;
 }
 
 /* Переопределяем стили для ссылок в сортировке */
@@ -452,8 +463,12 @@ input[type="radio"].visually-hidden {
 
 /* Блок "сортировать по... " */
 .sorting {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     margin: 0;
     margin-bottom: 33px;
@@ -461,10 +476,17 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 310px;
     padding: 0;
     margin: 0;
@@ -479,9 +501,15 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list-appearing {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;
     margin: 0;
     width: 40px;
@@ -585,7 +613,8 @@ input[type="radio"].visually-hidden {
 .pagination-list li:not(.pagination-item-current) a:active {
     color: #bfbfbf;
     background-color: #d5d5d5;
-    box-shadow: inset 0 4px 0 #bfbfbf;
+    -webkit-box-shadow: inset 0 4px 0 #bfbfbf;
+            box-shadow: inset 0 4px 0 #bfbfbf;
 }
 
 .pagination-list .pagination-item-current a {
@@ -793,7 +822,9 @@ input[type="radio"].visually-hidden {
 /* Партнеры */
 /* Выравниваю лого партнеров */
 .partners li {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     /* flex-basis: 210px;  */
     list-style: none;
     position: relative;
@@ -845,6 +876,7 @@ input[type="radio"].visually-hidden {
 /* Блок "напишите нам" */
 .contacts {
    background-color: #ffffff;
+   z-index: 2;
 }
 
 .contacts-title {
@@ -870,6 +902,17 @@ input[type="radio"].visually-hidden {
     border-radius: 3px;
 }
 
+/* Поведение */
+.contacts .button:hover,
+.contacts .button:focus {
+    background-color: #e74246;
+}
+
+.contacts .button:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #d7373b;
+}
+
 /* Модальное окно. Форма */
 .write-us {
     position: fixed;
@@ -877,7 +920,7 @@ input[type="radio"].visually-hidden {
     bottom: 180px;
     margin-left: -480px;
     padding-top: 70px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-left: 100px;
     padding-right: 100px;
     z-index: 10;
@@ -885,7 +928,8 @@ input[type="radio"].visually-hidden {
     width: 760px;
     min-height: 420px;
     background-color: #fff;
-    box-shadow: 0px 20px 100px 10px black;
+    -webkit-box-shadow: 0 20px 100px 10px black;
+            box-shadow: 0 20px 100px 10px black;
 }
 
 .write-us h3 {
@@ -918,9 +962,14 @@ input[type="radio"].visually-hidden {
 }
 
 .top-line-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 760px;
     margin-bottom: 18px;
 }
@@ -940,8 +989,13 @@ input[type="radio"].visually-hidden {
 }
 
 p[class$="-line"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 /* Подписи к полям */
@@ -967,6 +1021,50 @@ p[class$="-line"] {
     color: #8f8f8f;
 }
 
+/* Состояния полей формы */
+
+/* --наведение */
+.write-us input:hover,
+.write-us textarea:hover {
+    border-color: #b4b9bb; 
+}
+
+/* --фокус */
+.write-us input:active,
+.write-us input:focus,
+.write-us textarea:active,
+.write-us textarea:focus {
+    color: #444444;
+    border-color: #000;
+}
+
+.write-us input:active::-webkit-input-placeholder,
+.write-us input:focus::-webkit-input-placeholder,
+.write-us textarea:active::-webkit-input-placeholder,
+.write-us textarea:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #444444;
+}
+
+.write-us input:active::-moz-placeholder,
+.write-us input:focus::-moz-placeholder,
+.write-us textarea:active::-moz-placeholder,
+.write-us textarea:focus::-moz-placeholder { /* Firefox 19+ */
+    color: #444444;
+}
+.write-us input:active:-ms-input-placeholder,
+.write-us input:focus:-ms-input-placeholder,
+.write-us textarea:active:-ms-input-placeholder,
+.write-us textarea:focus:-ms-input-placeholder { /* IE 10+ */
+    color: #444444;
+}
+.write-us input:active:-moz-placeholder,
+.write-us input:focus:-moz-placeholder,
+.write-us textarea:active:-moz-placeholder,
+.write-us textarea:focus:-moz-placeholder { /* Firefox 18- */
+    color: #444444;
+}
+
+/* --невалидное значение */
 .write-us input[type="email"]:invalid {
     color: #e74246;
     border-color: #e74246;
@@ -992,26 +1090,43 @@ p[class$="-line"] {
     border-radius: 3px;
 }
 
+/* поведение кнопки отправки формы */
+.write-us input[type="submit"]:hover,
+.write-us input[type="submit"]:focus {
+    background-color: #e74246;
+}
+
+.write-us input[type="submit"]:active {
+    color: rgba(255, 255, 255, 0.4);
+    background-color: #d7373b;
+}
+
 /* Кнопка выхода из модального окна */
 .close-button {
     position: absolute;
     top: 78px;
-    right: 84px; 
+    right: 84px;
+    background: #fff; 
 }
 
 /* Блок социальных сетей */
 
 .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 1200px;
     margin-top: 55px;
     margin-bottom: 55px;
-    margin-left: -40px;  
 }
 
 .social-description {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     width: 580px;
 }
 
@@ -1028,23 +1143,31 @@ p[class$="-line"] {
 }
 
 .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    margin: 0;
+    padding: 0;
     margin-right: 130px;
     margin-left: 0;
 }
 
 .social-media li {
-    margin: 0;
     margin-right: 10px;
-    padding: 0;
     list-style: none;
     
 }
 
 .social .network {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 79px;
     height: 79px;
 
@@ -1098,6 +1221,7 @@ p[class$="-line"] {
 
 .map-wrapper {
     position: relative;
+    width: 100%;
     min-width: 1200px;
     height: 416px;
     margin: 0 0;
@@ -1105,13 +1229,29 @@ p[class$="-line"] {
     margin-bottom: 50px;
 }
 
+/* Интерактивная карта */
+.map-interactive {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 1440px; /* По ТЗ ее нужно растянуть на всю ширину вьюпорта. Как? */
+
+    z-index: 1;
+}
+
+.map-interactive-wrapper {
+    position: relative;
+    width: 100%;
+}
+
 .contacts p {
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
 
 .contacts {
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     position: absolute;
     top: 55px;
     left: 120px;
@@ -1151,7 +1291,7 @@ body {
 
 .main-navigation {
     padding-top: 48px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 /* Для всех флекс-контейнеров */
@@ -1162,8 +1302,12 @@ div[class$="-container"] {
 }
 
 .main-navigation-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
 }
 
 .inner-page .main-navigation-container {
@@ -1180,9 +1324,14 @@ div[class$="-container"] {
 }
 
 .site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 560px;
 }
 
@@ -1194,6 +1343,8 @@ div[class$="-container"] {
 }
 
 .user-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 160px;
     margin-left: auto;
@@ -1280,9 +1431,15 @@ div[class$="-container"] {
 /* Блок предложений */
 
 .advantages ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     width: 1200px;
     padding-bottom: 0;
     padding-top: 80px;
@@ -1292,7 +1449,9 @@ div[class$="-container"] {
 }
 
 .advantages li {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 380px;
     padding: 0;
     padding-top: 145px;
@@ -1323,6 +1482,8 @@ div[class$="-container"] {
 /* Блок преимуществ */
 
 .studio {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 1200px;
     padding-bottom: 48px;
@@ -1334,9 +1495,15 @@ div[class$="-container"] {
 }
 
 .left-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
     width: 660px;
     margin-right: 140px;
@@ -1369,8 +1536,12 @@ div[class$="-container"] {
 }
 
 .right-column .percent {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 
     padding: 0;
     margin: 0;
@@ -1406,10 +1577,17 @@ div[class$="-container"] {
 }
 
 .partners .ref-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 1200px;
     padding-bottom: 42px;
     padding-top: 44px;
@@ -1456,14 +1634,16 @@ div[class$="-container"] {
     position: absolute;
     left: 50%;
     bottom: 104px;
-    z-index: 100;
+    /*z-index: 100;*/
     
     width: 160px;
     height: 18px;
   
     text-align: center;
     font-size: 0;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 /* Активный переключатель */
@@ -1487,7 +1667,8 @@ div[class$="-container"] {
     width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .slide h3,
@@ -1528,7 +1709,7 @@ div[class$="-container"] {
 
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
-    background-position: 430px 0px;
+    background-position: 430px 0;
     background-clip: unset;
 }
 
@@ -1572,9 +1753,15 @@ div[class$="-container"] {
 
 /* Общая обертка для колонок */
 .catalog-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    max-width: 1200px;
+    margin:0 auto 60px;
 }
 
 /* Размеры шаблонов и внешние отступы */
@@ -1587,8 +1774,11 @@ div[class$="-container"] {
 
 /* Делаем список шаблонов флекс-контейнером */
 .template-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0;
     margin: 0;
 
@@ -1621,7 +1811,8 @@ div[class$="-container"] {
     background-image: url("../img/browser-dark.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    box-shadow: 0 2px 20px 1px #999998;
+    -webkit-box-shadow: 0 2px 20px 1px #999998;
+            box-shadow: 0 2px 20px 1px #999998;
 }
 
 .template-description-block h3 {
@@ -1653,6 +1844,8 @@ div[class$="-container"] {
 
   /* Пагинатор */
 .pagination-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
     margin: 0;
