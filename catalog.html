@@ -112,12 +112,16 @@
                   <!-- ..и здесь -->
                       <ul class="sorting-list-appearing">
                           <li class="arrow sorting-item-active">
-                              <p class="visually-hidden">По возрастанию цены</p>
-                              <a class="current-arrow" href="#"><img src="img/icon-down-dir.svg" alt="icon-up" width="11" height="10"></a>
+                              <a class="current-arrow" href="#">
+                                  <p class="visually-hidden">По возрастанию цены</p>
+                                  <img src="img/icon-down-dir.svg" alt="icon-up" width="11" height="10">
+                              </a>
                           </li>
                           <li class="arrow">
-                              <p class="visually-hidden">По убыванию цены</p>
-                              <a href="#"><img src="img/icon-up-dir.svg" alt="icon-down" width="11" height="10"></a>
+                              <a href="#">
+                                  <p class="visually-hidden">По убыванию цены</p>
+                                  <img src="img/icon-up-dir.svg" alt="icon-down" width="11" height="10">
+                              </a>
                           </li>
                       </ul>
                   </section>
@@ -136,7 +140,7 @@
                                   <span class="price">9 900 руб.</span>
                               </div>
                               <p class="template-image">
-                              <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
+                                  <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
                               </p>
                           </li>
                           <li class="template-item">
@@ -148,7 +152,7 @@
                                   <span class="price">9 900 руб.</span>
                               </div>
                               <p class="template-image">
-                              <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576">
+                                  <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576">
                               </p>
                           </li>
                           <li class="template-item">
@@ -160,7 +164,7 @@
                                   <span class="price">9 900 руб.</span>
                               </div>
                               <p class="template-image">
-                              <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
+                                  <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
                               </p>
                           </li>
                           <li class="template-item">
@@ -172,7 +176,7 @@
                                   <span class="price">9 900 руб.</span>
                               </div>
                               <p class="template-image">
-                              <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
+                                  <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
                               </p>
                           </li>
                           <li class="template-item">
@@ -184,7 +188,7 @@
                                   <span class="price">9 900 руб.</span>
                               </div>
                               <p class="template-image">
-                              <img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
+                                  <img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
                               </p>
                           </li>
                           <li class="template-item">
@@ -196,7 +200,7 @@
                                   <span class="price">9 900 руб.</span>
                               </div>
                               <p class="template-image">
-                              <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
+                                  <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
                               </p>
                           </li>
                       </ul>
@@ -217,17 +221,19 @@
             
             <div class="map-wrapper"><!-- Обертка для карты и блока "Контакты" -->
                 <!-- Все же карта в данном случае - контентное изображение, как мне кажется. Если не подключится ни JS ни CSS, пользователь должен видеть, где находится студия. Поэтому вставил: -->
-                <div class="map"><img src="img/Group-map.jpg" width="1440" height="416" alt="Мы здесь."></div>
+                <div class="map"><img src="img/group-map.jpg" width="1440" height="416" alt="Мы здесь."></div>
             
                 <div class="map-interactive">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.32089461598817!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1520660605694" width="1440" height="416" style="border:0" allowfullscreen></iframe>
                 </div> 
-            
-                <div class="contacts"> 
-                    <p class="contacts-title">NЁRDS DESIGN STUDIO</p> 
-                    <p class="address">191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p> 
-                    <p class="phone">тел. +7 (812) 275-75-75</p>
-                    <button class="button">Напишите нам</button> 
+                
+                <div class="contacts-wrapper">
+                    <div class="contacts"> 
+                        <p class="contacts-title">NЁRDS DESIGN STUDIO</p> 
+                        <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
+                        <p class="phone">тел. +7 (812) 275-75-75</p>
+                        <button class="button">Напишите нам</button> 
+                    </div>
                 </div>
             </div>
             
@@ -254,7 +260,10 @@
                     <input type="submit" value="ОТПРАВИТЬ">
                     
                     <h3 class="visually-hidden">Кнопка выхода из окна с формой</h3>
-                    <button class="button close-button" type="button"><img src="img/close-cross.svg" alt="close-cross" width="21" height="21"></button>
+                    <button class="button close-button" type="button">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg> -->
+                        <img src="img/close-cross.svg" alt="close-cross" width="21" height="21">
+                    </button>
                 </form>
             </div>
         </section>

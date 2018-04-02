@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: "Roboto Regular", Verdana, sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: normal;
@@ -57,7 +57,7 @@ input[type="radio"].visually-hidden {
 */
 /* Стили главной навигации */
 .main-navigation {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
@@ -77,16 +77,10 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
-/* Убираем маркеры списка */
-.site-navigation,
-.user-navigation {
-    list-style: none;
-}
-
 /* Переопределяем цвет ссылок по умолчанию */
 .site-navigation a,
 .user-navigation a {
-  color: #000;
+    color: #000;
 }
 
 /* Цвет ссылок по наведению */
@@ -112,7 +106,7 @@ input[type="radio"].visually-hidden {
 
 /* Главный заголовок страницы каталога */
 .inner-page .inner-heading {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -143,7 +137,7 @@ input[type="radio"].visually-hidden {
 
  /* Параметры шрифта в "СТОИМОСТЬ:" */
  .price-from-to label {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 700;
@@ -258,6 +252,7 @@ input[type="radio"].visually-hidden {
   
 .price-controls label {
     display: inline-block;
+    vertical-align: middle;
     width: 50%;
     
     font-size: 16px;
@@ -394,7 +389,7 @@ input[type="radio"].visually-hidden {
 
 /* Кнопка "Показать" */
 .templates-filter input[type="submit"] {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -402,6 +397,8 @@ input[type="radio"].visually-hidden {
     background-color: #eeeeee;
     border: none;
     border-radius: 3px;
+
+    cursor: pointer;
 }
 
 /* Состояния кнопки "показать" */
@@ -545,7 +542,7 @@ input[type="radio"].visually-hidden {
 
 /* Заголовки шаблонов */
 .templates a {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -560,7 +557,7 @@ input[type="radio"].visually-hidden {
 
 /* Блок с ценой */
 .templates .price {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -571,6 +568,8 @@ input[type="radio"].visually-hidden {
     background-color: #fb565a;
     padding: 17px 0;
     border-radius: 3px;
+
+    cursor: pointer;
 }
 
 /* Горизонтальное выравнивание. (Блок с ценой будет выровнен на следующем этапе маргинами) */
@@ -591,7 +590,7 @@ input[type="radio"].visually-hidden {
 
 /* Стили для пагинатора */
 .pagination-list a {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -639,14 +638,14 @@ input[type="radio"].visually-hidden {
 }
 
 .top-slider h2 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
 }
 
 .top-slider p {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -654,7 +653,7 @@ input[type="radio"].visually-hidden {
 
 /* Кнопка "узнать больше" */
 .top-slider .button {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -684,7 +683,7 @@ input[type="radio"].visually-hidden {
 /* Предложения */
 
 .advantages li {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -692,7 +691,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -704,6 +703,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages p {
+    width: 260px;
     padding: 0;
     margin: 0;
     margin-bottom: 48px;
@@ -722,7 +722,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages .button {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -757,12 +757,12 @@ input[type="radio"].visually-hidden {
 
 .advantages .color-green:active {
     background-color: rgb(0, 170, 98);
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages .color-yellow:active {
     background-color: rgb(229, 167, 34);
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.3);
 }
 /* Выравнивание текста в кнопках */
 .advantages .button {
@@ -777,14 +777,14 @@ input[type="radio"].visually-hidden {
 
 /* Преимущества */
 .studio h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
 }
 
 .studio h4 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -792,14 +792,14 @@ input[type="radio"].visually-hidden {
 }
 
 .left-column p {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
 }
 
 .right-column p {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -813,7 +813,7 @@ input[type="radio"].visually-hidden {
 }
 /* "Проценты" */
 .percent span {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 45px;
     line-height: 10.06px; /* ?! Это из макета */
     font-weight: 700;
@@ -833,10 +833,6 @@ input[type="radio"].visually-hidden {
     padding: 0;
     min-width: 210px;  
     /* width: 210px; */
-}
-
-.ref-list li:first-child {
-    margin-left: -45px;
 }
 
 /* Вертикальная полоска между лого партнеров */
@@ -880,7 +876,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-title {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -889,7 +885,7 @@ input[type="radio"].visually-hidden {
 
 /* Кнопка вызова модального окна "напишите нам" */
 .contacts .button {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -909,7 +905,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts .button:active {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.3);
     background-color: #d7373b;
 }
 
@@ -933,7 +929,7 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;    
@@ -1088,6 +1084,8 @@ p[class$="-line"] {
     background-color: rgb(251, 86, 90);
     border: none;
     border-radius: 3px;
+
+    cursor: pointer;
 }
 
 /* поведение кнопки отправки формы */
@@ -1222,10 +1220,10 @@ p[class$="-line"] {
 .map-wrapper {
     position: relative;
     width: 100%;
-    min-width: 1200px;
+    /* min-width: 1200px; */
     height: 416px;
-    margin: 0 0;
-    margin-left: calc(50% - 720px);
+    margin: 0 auto;
+    /* margin-left: calc(50% - 720px); */
     margin-bottom: 50px;
 }
 
@@ -1234,14 +1232,33 @@ p[class$="-line"] {
     position: absolute;
     left: 0;
     top: 0;
-    min-width: 1440px; /* По ТЗ ее нужно растянуть на всю ширину вьюпорта. Как? */
+    width: 100%;
 
     z-index: 1;
 }
 
-.map-interactive-wrapper {
-    position: relative;
+.map-interactive iframe {
+    display: block;
     width: 100%;
+}
+
+.contacts-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feedback .map {
+    position: absolute;
+    width: 100%;
+}
+
+.feedback img {
+    width: 100%;
+    height: 416px;
+    object-fit: cover;
 }
 
 .contacts p {
@@ -1253,9 +1270,10 @@ p[class$="-line"] {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     position: absolute;
-    top: 55px;
-    left: 120px;
-    max-width: 320px;
+    bottom: 50%;
+    transform: translateY(160px); /* в случае переполнения блок растянеется вверх, где больше места */
+    left: 130px;
+    max-width: 224px;
     padding: 50px;
 }
 
@@ -1269,6 +1287,13 @@ p[class$="-line"] {
 
 .contacts .phone {
     padding-bottom: 38px;
+}
+
+.contacts-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
 }
 
 /******************************************************************************************/
@@ -1296,7 +1321,7 @@ body {
 
 /* Для всех флекс-контейнеров */
 div[class$="-container"] {
-    width: 1200px;
+    width: 1160px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -1348,7 +1373,8 @@ div[class$="-container"] {
     display: flex;
     max-width: 160px;
     margin-left: auto;
-    margin-right: 20px;
+    /* margin-right: 20px; */
+    padding-right: 20px;
 }
 
 .user-navigation .basket {
@@ -1372,7 +1398,7 @@ div[class$="-container"] {
 
 /* Красные подчеркивания у ссылок гл. навигации */
 
-.site-navigation a::after{
+.site-navigation a::after {
     content: "";
     position: absolute;
     top: 57px;
@@ -1406,8 +1432,8 @@ div[class$="-container"] {
 }
 
 /* Красное подчеркивание по нажатию и находимся на странице */
-.user-navigation a:active::after,
-.site-navigation a:active::after,
+/* .user-navigation a:active::after, */
+/* .site-navigation a:active::after, */
 .site-navigation .site-navigation-current::after {
     display: block;
 }
@@ -1431,6 +1457,7 @@ div[class$="-container"] {
 /* Блок предложений */
 
 .advantages ul {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1439,20 +1466,27 @@ div[class$="-container"] {
             justify-content: space-between;
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: flex-end;
-    width: 1200px;
+            align-items: flex-start;
+    width: 1160px;
     padding-bottom: 0;
     padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
+    margin-bottom: 70px;
+    border-bottom: 2px solid #eee;
+}
+
+.advantages .button {
+    position: absolute;
+    bottom: 72px;
 }
 
 .advantages li {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    width: 380px;
+    min-width: 400px;
     padding: 0;
     padding-top: 145px;
     padding-bottom: 95px;
@@ -1474,18 +1508,13 @@ div[class$="-container"] {
     background-image: url("../img/illustration-3.jpg");
 }
 
-.advantages ul {
-    margin-bottom: 70px;
-    border-bottom: 2px solid #eee;
-}
-
 /* Блок преимуществ */
 
 .studio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1200px;
+    width: 1160px;
     padding-bottom: 48px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1552,7 +1581,7 @@ div[class$="-container"] {
     margin-bottom: 40px;
 }
 
-.right-column li {
+.right-column li:not(:last-child) {
     margin-right: 22px;
 }
 
@@ -1588,11 +1617,11 @@ div[class$="-container"] {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 1200px;
-    padding-bottom: 42px;
-    padding-top: 44px;
+    width: 1160px;
+    /* padding-bottom: 42px; */
+    /* padding-top: 44px; */
+    padding: 42px 20px 44px;
     margin: 0 auto;
-
     border-bottom: 2px solid #eeeeee;
 }
 
@@ -1607,6 +1636,7 @@ div[class$="-container"] {
     position: relative;
     
     display: inline-block;
+    vertical-align: middle;
     width: 18px;
     height: 18px;
     padding: 8px;
@@ -1664,7 +1694,7 @@ div[class$="-container"] {
 }
 
 .container-centering {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
     -webkit-box-sizing: border-box;
@@ -1739,7 +1769,7 @@ div[class$="-container"] {
 */
 
 .catalog {
-    width: 1200px;
+    width: 1160px;
     padding: 0 20px;
     margin: 0 auto;
 }
