@@ -221,7 +221,9 @@
             
             <div class="map-wrapper"><!-- Обертка для карты и блока "Контакты" -->
                 <!-- Все же карта в данном случае - контентное изображение, как мне кажется. Если не подключится ни JS ни CSS, пользователь должен видеть, где находится студия. Поэтому вставил: -->
-                <div class="map"><img src="img/group-map.jpg" width="1440" height="416" alt="Мы здесь."></div>
+                <div class="map">
+                    <img src="img/group-map.jpg" width="1440" height="416" alt="Мы здесь.">
+                </div>
             
                 <div class="map-interactive">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.32089461598817!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1520660605694" width="1440" height="416" style="border:0" allowfullscreen></iframe>
@@ -238,7 +240,7 @@
             </div>
             
             <!-- Модальное окно с формой "Напишите нам" -->
-            <div class="write-us"><!-- Скрывающий класс временно! -->  
+            <div class="write-us visually-hidden"><!-- Скрывающий класс временно! -->  
                 <h3>Напишите нам</h3>
                 <form action="https://echo.htmlacademy.ru" name="write-us-form" method="post">
                     <div class="top-line-wrapper">
@@ -262,7 +264,7 @@
                     <h3 class="visually-hidden">Кнопка выхода из окна с формой</h3>
                     <button class="button close-button" type="button">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg> -->
-                        <img src="img/close-cross.svg" alt="close-cross" width="21" height="21">
+                        <img src="img/close-cross.png" alt="close-cross" width="21" height="21">
                     </button>
                 </form>
             </div>

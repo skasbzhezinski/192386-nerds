@@ -490,7 +490,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list .text {
-    margin-right: 27px;
+    margin-right: 26px;
 }
 
 .sorting-list .text:last-child {
@@ -514,7 +514,8 @@ input[type="radio"].visually-hidden {
 
 .sorting .list-header {
     width: 160px;
-    margin-right: 240px;
+    /* margin-right: 240px; */
+    margin-right: 230px;
 }
 
 /* Колонка с сортировкой, шаблонами и пагинатором (Правая) */
@@ -763,10 +764,6 @@ input[type="radio"].visually-hidden {
 .advantages .color-yellow:active {
     background-color: rgb(229, 167, 34);
     color: rgba(255, 255, 255, 0.3);
-}
-/* Выравнивание текста в кнопках */
-.advantages .button {
-    text-align: center;
 }
 
 /* Выравнивание текста */
@@ -1116,8 +1113,8 @@ p[class$="-line"] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 1200px;
-    margin-top: 55px;
+    /* width: 1200px; */
+    margin-top: 70px;
     margin-bottom: 55px;
 }
 
@@ -1255,10 +1252,11 @@ p[class$="-line"] {
     width: 100%;
 }
 
-.feedback img {
+.map img {
     width: 100%;
     height: 416px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .contacts p {
@@ -1271,10 +1269,12 @@ p[class$="-line"] {
             box-sizing: content-box;
     position: absolute;
     bottom: 50%;
-    transform: translateY(160px); /* в случае переполнения блок растянеется вверх, где больше места */
+    -webkit-transform: translateY(160px);
+        -ms-transform: translateY(160px);
+            transform: translateY(160px); /* в случае переполнения блок растянеется вверх, где больше места */
     left: 130px;
     max-width: 224px;
-    padding: 50px;
+    padding: 49px;
 }
 
 .contacts .contacts-title {
@@ -1374,21 +1374,18 @@ div[class$="-container"] {
     max-width: 160px;
     margin-left: auto;
     /* margin-right: 20px; */
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 
 .user-navigation .basket {
     position: relative;
-    padding-left: 60px;
-}
-
-/* Псевдоэлемент с иконкой корзины */
-.user-navigation .basket {
-
+    /* padding-left: 60px; */
+    padding-left: 84px;
     background-image: url("../img/cart-icon.svg");
     background-repeat: no-repeat;
-    background-position: 20px 17px;
-  }
+    /* background-position: 20px 17px; */
+    background-position: 45px 17px;
+}
 
 .logo {
     width: 160px;
@@ -1473,26 +1470,35 @@ div[class$="-container"] {
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 77px;
     border-bottom: 2px solid #eee;
 }
 
 .advantages .button {
     position: absolute;
-    bottom: 72px;
+    /* bottom: 72px; */
+    bottom: 77px;
+    text-align: center;
 }
 
 .advantages li {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    min-width: 400px;
+    /* min-width: 400px; */
     padding: 0;
     padding-top: 145px;
-    padding-bottom: 95px;
+    /* padding-bottom: 95px; */
+    padding-bottom: 115px;
     margin: 0;
+    margin-right: 100px;
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.advantages li:last-child {
+    margin: 0;
+    margin-right: 60px;
 }
 
 /* Картинки в блоке с предложениями */
@@ -1515,7 +1521,7 @@ div[class$="-container"] {
     display: -ms-flexbox;
     display: flex;
     width: 1160px;
-    padding-bottom: 48px;
+    padding-bottom: 46px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
@@ -1534,8 +1540,10 @@ div[class$="-container"] {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
-    width: 660px;
-    margin-right: 140px;
+    /* width: 660px; */
+    /* margin-right: 140px; */
+    width: 700px;
+    margin-right: 110px;
 }
 
 .right-column {
@@ -1551,8 +1559,11 @@ div[class$="-container"] {
     padding: 0;
 } 
 
-.left-column li,
 .left-column h4 {
+    margin-bottom: 26px;
+}
+
+.left-column li {
     margin-bottom: 30px;
 }
 
@@ -1709,7 +1720,7 @@ div[class$="-container"] {
 
 .top-slider {
     width: 100%;
-    padding-top: 15px;
+    padding-top: 20px;
     margin: 0 auto;
 }
 
@@ -1778,7 +1789,7 @@ div[class$="-container"] {
 .sorting-wrapper {
     min-height: 1990px;
     width: 760px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
 }
 
 /* Общая обертка для колонок */
@@ -1798,7 +1809,8 @@ div[class$="-container"] {
 .template-item {
     min-height: 616px;
     width: 360px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
+    margin-bottom: 34px;
     margin-right: 40px;
 }
 
@@ -1811,6 +1823,7 @@ div[class$="-container"] {
         flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    margin-bottom: 26px;
 
     list-style: none;
   }
@@ -1886,7 +1899,7 @@ div[class$="-container"] {
 .pagination-item a {
     display: block;
     width: 50px;
-    margin-right: 10px;
+    margin-right: 11px;
     padding-top: 17px;
     padding-bottom: 16px;
 }
