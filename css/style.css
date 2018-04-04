@@ -19,7 +19,7 @@ body {
 
 a {
     text-decoration: none;
-  }
+}
   
 img {
     max-width: 100%;
@@ -122,7 +122,7 @@ input[type="radio"].visually-hidden {
 
 /* Параметры шрифта в legend */
 .list-header {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -143,7 +143,7 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     text-transform: uppercase;
     color: #283136;
- }
+}
 
 /* Курсор */
 .filter input[type="range"],
@@ -333,7 +333,7 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:hover + label,
 .filter-input-radio:focus + label {
     background-image: url("../img/radio-off.png");
- }
+}
 
 /* --наведение, фокус, выбрано */
 .filter-input-radio:checked:hover + label,
@@ -880,15 +880,23 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
 }
 
+.contacts .address,
+.contacts .phone {
+    color: #666666;
+}
+
 /* Кнопка вызова модального окна "напишите нам" */
 .contacts .button {
+    display: block;
     font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    padding: 16px 45px;
+    /* padding: 16px 45px; */
+    width: 220px;
+    padding: 16px 0;
     color: #fff;
     background-color: rgb(251, 86, 90);
     border: none;
@@ -993,7 +1001,7 @@ p[class$="-line"] {
 
 /* Подписи к полям */
 .write-us label {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
@@ -1001,8 +1009,8 @@ p[class$="-line"] {
 
 /*  Поля формы */
 .write-us input,
-.write-us textarea{
-    font-family: "Roboto", sans-serif;
+.write-us textarea {
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -1065,7 +1073,7 @@ p[class$="-line"] {
 
 /* Кнопка отправки формы */
 .write-us input[type="submit"] {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -1131,7 +1139,7 @@ p[class$="-line"] {
 }
 
 .social-description b {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Verdana, sans-serif;
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
@@ -1273,7 +1281,8 @@ p[class$="-line"] {
         -ms-transform: translateY(160px);
             transform: translateY(160px); /* в случае переполнения блок растянеется вверх, где больше места */
     left: 130px;
-    max-width: 224px;
+    /* width: 224px; */
+    width: 220px;
     padding: 49px;
 }
 
@@ -1340,7 +1349,7 @@ div[class$="-container"] {
 }
 
 /* Убираем дефолтные стили списков */
-.site-navigation ,
+.site-navigation,
 .user-navigation {
     padding: 0;
     margin: 0;
@@ -1552,7 +1561,6 @@ div[class$="-container"] {
 
 /* Обнуляем дефолтные отступы */
 .studio h3,
-.studio left,
 .studio p,
 .studio ul {
     margin: 0;
@@ -1746,7 +1754,7 @@ div[class$="-container"] {
 }
 
 .slide-1 {
-    
+    /* Временно */
 
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
@@ -1762,6 +1770,16 @@ div[class$="-container"] {
     background-position: 500px -16px;
     background-clip: unset;
 }
+
+.slide-2 h2 {
+    max-width: 520px;
+}
+
+.slide-2 p {
+    max-width: 430px;
+}   /* Хотя, на мой взгляд, это два лишних правила. Можно было обойтись
+    br-ками, тем более что для первого и третьего слайдов это разрешено. 
+    Почему для второго нельзя? */
 
 .slide-3 {
     display: none;/* Временно */
@@ -1826,11 +1844,11 @@ div[class$="-container"] {
     margin-bottom: 26px;
 
     list-style: none;
-  }
+}
 
 .template-item:nth-child(2n) {
     margin-right: 0;
-  }
+}
 
 /* Всплывающий блок */
 /* Сделать на флексах */
