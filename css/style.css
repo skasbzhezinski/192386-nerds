@@ -916,6 +916,7 @@ input[type="radio"].visually-hidden {
 
 /* Модальное окно. Форма */
 .write-us {
+    display: none;
     position: fixed;
     left: 50%;
     bottom: 180px;
@@ -1927,3 +1928,7 @@ div[class$="-container"] {
 }
 
 /*********************************************************************************************/
+/* Стили для реализации модального окна write-us */
+.modal-show {
+    display: block;
+}
