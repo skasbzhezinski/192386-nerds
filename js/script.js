@@ -1,5 +1,5 @@
 var link = document.querySelector(".button-link");
-var popup = document.querySelector(".modal-popup");
+var popup = document.querySelector(".write-us");
 var close = document.querySelector(".close-button");
 var userName = popup.querySelector("[name = name]"); // находим поле с атрибутом name = "name"
 var userEmail = popup.querySelector("[name = mail]"); // находим поле с атрибутом name = "email"
@@ -21,6 +21,7 @@ link.addEventListener("click", function(evt) {evt.preventDefault();
 
 close.addEventListener("click", function(evt) {evt.preventDefault();
     popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
 });
 
 //если localStorage не работает локально
@@ -39,6 +40,7 @@ form.addEventListener("submit", function(evt) { //ловим событие от
     console.log("Отправляем форму");
     if (!userName.value || !userEmail.value) { //если не введено хотя бы одно значение, выведем напоминание 
         console.log("Нужно ввести Ваше имя и email");
+        popup.classList.add("modal-error"); //добавляем класс в случае ошибочной отправки формы
     } else {
         if (isStorageSupport) { //условие: если localStorage работает
             localStorage.setItem("email", userEmail.value);
@@ -53,6 +55,7 @@ form.addEventListener("submit", function(evt) { //ловим событие от
 window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
+        popup.classList.remove("modal-error");
         if (popup.classList.contains("modal-show")) {
             popup.classList.remove("modal-show");
         }
