@@ -23,17 +23,30 @@ close.addEventListener("click", function(evt) {evt.preventDefault();
     popup.classList.remove("modal-show");
 });
 
+//если localStorage не работает локально
+var isStorageSupport = true;
+
+try {
+    (mailStorage = localStorage.getItem("email")) ||
+    (nameStorage = localStorage.getItem("name"));
+} catch (err) {
+    isStorageSupport = false;
+}
+
+
 form.addEventListener("submit", function(evt) { //ловим событие отправки формы
     evt.preventDefault(); // отменяем действие по умолчанию
     console.log("Отправляем форму");
     if (!userName.value || !userEmail.value) { //если не введено хотя бы одно значение, выведем напоминание 
         console.log("Нужно ввести Ваше имя и email");
     } else {
-        localStorage.setItem("email", userEmail.value);
-        localStorage.setItem("name", userName.value); //иначе запишем введенные значения в localStorage
+        if (isStorageSupport) { //условие: если localStorage работает
+            localStorage.setItem("email", userEmail.value);
+            localStorage.setItem("name", userName.value); //иначе запишем введенные значения в localStorage
+        }
+        console.log(userName.value); //выводим в консоль введенные в поля значения
+        console.log(userEmail.value);
     }
-    console.log(userName.value); //выводим в консоль введенные в поля значения
-    console.log(userEmail.value);
 });
 
 //выход из всплывающего окна по нажатию ESC
