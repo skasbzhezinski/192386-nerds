@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto Regular", Verdana, sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: normal;
@@ -19,8 +19,8 @@ body {
 
 a {
     text-decoration: none;
-}
-
+  }
+  
 img {
     max-width: 100%;
     height: auto;
@@ -29,24 +29,22 @@ img {
 :focus {
      outline: none; /* Стили для этого состояния прописаны явно */
 }
-
+  
 /* Стили для скрывающего класса */
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
-
+  
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
-
+  
     white-space: nowrap;
-
-    -webkit-clip-path: inset(100%);
-
-            clip-path: inset(100%);
+  
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -57,7 +55,7 @@ input[type="radio"].visually-hidden {
 */
 /* Стили главной навигации */
 .main-navigation {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
@@ -77,10 +75,16 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
+/* Убираем маркеры списка */
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
 /* Переопределяем цвет ссылок по умолчанию */
 .site-navigation a,
 .user-navigation a {
-    color: #000;
+  color: #000;
 }
 
 /* Цвет ссылок по наведению */
@@ -95,7 +99,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a:active,
 .user-navigation a:active {
     color: rgb(166, 166, 166);
-
+    
 }
 
 /*******************************************************************************************/
@@ -106,7 +110,7 @@ input[type="radio"].visually-hidden {
 
 /* Главный заголовок страницы каталога */
 .inner-page .inner-heading {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -122,7 +126,7 @@ input[type="radio"].visually-hidden {
 
 /* Параметры шрифта в legend */
 .list-header {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -137,13 +141,13 @@ input[type="radio"].visually-hidden {
 
  /* Параметры шрифта в "СТОИМОСТЬ:" */
  .price-from-to label {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 700;
     text-transform: uppercase;
     color: #283136;
-}
+ }
 
 /* Курсор */
 .filter input[type="range"],
@@ -165,7 +169,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter .cost-header {
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
 }
 
 .filter .filter-cost {
@@ -204,9 +208,9 @@ input[type="radio"].visually-hidden {
     padding-top: 39px;
     padding-right: 20px;
     padding-left: 20px;
-
+    
     background-color: #f1f1f1;
-
+    
     border-radius: 5px;
 }
 
@@ -214,7 +218,7 @@ input[type="radio"].visually-hidden {
 .range-controls .bar {
     width: 70%;
     height: 2px;
-
+  
     background: #00ca74;
 }
 
@@ -227,11 +231,10 @@ input[type="radio"].visually-hidden {
     width: 4px;
     height: 4px;
     padding: 0;
-
+  
     border: 8px solid #ffffff;
     background-color: #ababab;
-    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
-            box-shadow: 0 2px 1px 0 #cfcfcf;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -240,7 +243,7 @@ input[type="radio"].visually-hidden {
 .range-controls .toggle-min {
     left: 18px;
 }
-
+  
 .range-controls .toggle-max {
     left: 160px;
 }
@@ -249,12 +252,11 @@ input[type="radio"].visually-hidden {
 .price-controls {
     font-size: 0;
 }
-
+  
 .price-controls label {
     display: inline-block;
-    vertical-align: middle;
     width: 50%;
-
+    
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -282,7 +284,7 @@ input[type="radio"].visually-hidden {
 /* вся полоска */
 .range-controls .scale {
     height: 2px;
-
+  
     background: #d7dcde;
 }
 
@@ -290,22 +292,19 @@ input[type="radio"].visually-hidden {
     min-width: 260px;
     margin-bottom: 12px; /* регулирует вертикальные отступы между инпутами */
     padding-left: 37px;
-
+    
     /*background: rgba(0, 128, 0, 0.2);
     box-shadow: 0 0 0 3px green;*/
 }
 
 .filter-grid label,
 .filter-features label {
-    padding-top: 4px; /* регулирует вертикальные отступы между инпутами
+    padding-top: 4px; /* регулирует вертикальные отступы между инпутами 
                       и центрирует текст относительно иконки*/
     display: block;
 
     cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    user-select: none;
 }
 
 /* Поведение лейблов в разных состояниях */
@@ -333,20 +332,20 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:hover + label,
 .filter-input-radio:focus + label {
     background-image: url("../img/radio-off.png");
-}
+ }
 
 /* --наведение, фокус, выбрано */
 .filter-input-radio:checked:hover + label,
 .filter-input-radio:checked:focus + label {
      background-image: url("../img/radio-on.png");
 }
-
+ 
 /* --отключено */
 .filter-input-radio:disabled + label,
 .filter-input-checkbox:disabled + label {
     color: #bec1c2;
 }
-
+ 
 .filter-input-radio:disabled + label {
     background-image: url("../img/radio-off-disabled.png");
 }
@@ -389,7 +388,7 @@ input[type="radio"].visually-hidden {
 
 /* Кнопка "Показать" */
 .templates-filter input[type="submit"] {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -397,8 +396,6 @@ input[type="radio"].visually-hidden {
     background-color: #eeeeee;
     border: none;
     border-radius: 3px;
-
-    cursor: pointer;
 }
 
 /* Состояния кнопки "показать" */
@@ -410,8 +407,7 @@ input[type="radio"].visually-hidden {
 .templates-filter input[type="submit"]:active {
     color: #959595;
     background-color: #d5d5d5;
-    -webkit-box-shadow: inset 0 4px 0 0 #bfbfbf;
-            box-shadow: inset 0 4px 0 0 #bfbfbf;
+    box-shadow: inset 0 4px 0 0 #bfbfbf;
 }
 
 /* Переопределяем стили для ссылок в сортировке */
@@ -460,12 +456,8 @@ input[type="radio"].visually-hidden {
 
 /* Блок "сортировать по... " */
 .sorting {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
     margin-bottom: 33px;
@@ -473,24 +465,17 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     width: 310px;
     padding: 0;
     margin: 0;
 }
 
 .sorting-list .text {
-    margin-right: 26px;
+    margin-right: 27px;
 }
 
 .sorting-list .text:last-child {
@@ -498,15 +483,9 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list-appearing {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
     margin: 0;
     width: 40px;
@@ -514,8 +493,7 @@ input[type="radio"].visually-hidden {
 
 .sorting .list-header {
     width: 160px;
-    /* margin-right: 240px; */
-    margin-right: 230px;
+    margin-right: 240px;
 }
 
 /* Колонка с сортировкой, шаблонами и пагинатором (Правая) */
@@ -543,7 +521,7 @@ input[type="radio"].visually-hidden {
 
 /* Заголовки шаблонов */
 .templates a {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -558,19 +536,17 @@ input[type="radio"].visually-hidden {
 
 /* Блок с ценой */
 .templates .price {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     text-transform: uppercase;
-    width: 200px;
+    width: 200px; 
 
     color: #ffffff;
     background-color: #fb565a;
     padding: 17px 0;
     border-radius: 3px;
-
-    cursor: pointer;
 }
 
 /* Горизонтальное выравнивание. (Блок с ценой будет выровнен на следующем этапе маргинами) */
@@ -591,7 +567,7 @@ input[type="radio"].visually-hidden {
 
 /* Стили для пагинатора */
 .pagination-list a {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -613,8 +589,7 @@ input[type="radio"].visually-hidden {
 .pagination-list li:not(.pagination-item-current) a:active {
     color: #bfbfbf;
     background-color: #d5d5d5;
-    -webkit-box-shadow: inset 0 4px 0 #bfbfbf;
-            box-shadow: inset 0 4px 0 #bfbfbf;
+    box-shadow: inset 0 4px 0 #bfbfbf;
 }
 
 .pagination-list .pagination-item-current a {
@@ -639,14 +614,14 @@ input[type="radio"].visually-hidden {
 }
 
 .top-slider h2 {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
 }
 
 .top-slider p {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -654,7 +629,7 @@ input[type="radio"].visually-hidden {
 
 /* Кнопка "узнать больше" */
 .top-slider .button {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -684,7 +659,7 @@ input[type="radio"].visually-hidden {
 /* Предложения */
 
 .advantages li {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -692,7 +667,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages h3 {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -704,7 +679,6 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages p {
-    width: 260px;
     padding: 0;
     margin: 0;
     margin-bottom: 48px;
@@ -723,7 +697,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages .button {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -758,12 +732,16 @@ input[type="radio"].visually-hidden {
 
 .advantages .color-green:active {
     background-color: rgb(0, 170, 98);
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .advantages .color-yellow:active {
     background-color: rgb(229, 167, 34);
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.5);
+}
+/* Выравнивание текста в кнопках */
+.advantages .button {
+    text-align: center;
 }
 
 /* Выравнивание текста */
@@ -774,14 +752,14 @@ input[type="radio"].visually-hidden {
 
 /* Преимущества */
 .studio h3 {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
 }
 
 .studio h4 {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -789,14 +767,14 @@ input[type="radio"].visually-hidden {
 }
 
 .left-column p {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
 }
 
 .right-column p {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -810,7 +788,7 @@ input[type="radio"].visually-hidden {
 }
 /* "Проценты" */
 .percent span {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 45px;
     line-height: 10.06px; /* ?! Это из макета */
     font-weight: 700;
@@ -819,17 +797,19 @@ input[type="radio"].visually-hidden {
 /* Партнеры */
 /* Выравниваю лого партнеров */
 .partners li {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
     /* flex-basis: 210px;  */
     list-style: none;
     position: relative;
     text-align: center;
     margin: 0;
     padding: 0;
-    min-width: 210px;
+    min-width: 210px;  
     /* width: 210px; */
+}
+
+.ref-list li:first-child {
+    margin-left: -45px;
 }
 
 /* Вертикальная полоска между лого партнеров */
@@ -843,7 +823,7 @@ input[type="radio"].visually-hidden {
     margin-top: -26px;
 
     background-color: #eee;
-}
+} 
 
 /* Переопределяем непрозрачность логотипов партнеров */
 .partners img {
@@ -873,30 +853,22 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-title {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
 }
 
-.contacts .address,
-.contacts .phone {
-    color: #666666;
-}
-
 /* Кнопка вызова модального окна "напишите нам" */
 .contacts .button {
-    display: block;
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    /* padding: 16px 45px; */
-    width: 220px;
-    padding: 16px 0;
+    padding: 16px 45px;
     color: #fff;
     background-color: rgb(251, 86, 90);
     border: none;
@@ -910,17 +882,15 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts .button:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.5);
     background-color: #d7373b;
 }
 
 /* Модальное окно. Форма */
 .write-us {
-    display: none;
     position: fixed;
     left: 50%;
-    /*bottom: 180px;*/
-    top: 100px;
+    bottom: 180px;
     margin-left: -480px;
     padding-top: 70px;
     padding-bottom: 0;
@@ -931,15 +901,14 @@ input[type="radio"].visually-hidden {
     width: 760px;
     min-height: 420px;
     background-color: #fff;
-    -webkit-box-shadow: 0 20px 100px 10px black;
-            box-shadow: 0 20px 100px 10px black;
+    box-shadow: 0 20px 100px 10px black;
 }
 
 .write-us h3 {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 45px;
     line-height: 45px;
-    font-weight: 500;
+    font-weight: 500;    
 }
 
 .write-us h3,
@@ -965,14 +934,9 @@ input[type="radio"].visually-hidden {
 }
 
 .top-line-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 760px;
     margin-bottom: 18px;
 }
@@ -992,18 +956,13 @@ input[type="radio"].visually-hidden {
 }
 
 p[class$="-line"] {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
 }
 
 /* Подписи к полям */
 .write-us label {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
@@ -1011,8 +970,8 @@ p[class$="-line"] {
 
 /*  Поля формы */
 .write-us input,
-.write-us textarea {
-    font-family: "Roboto", Verdana, sans-serif;
+.write-us textarea{
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -1029,7 +988,7 @@ p[class$="-line"] {
 /* --наведение */
 .write-us input:hover,
 .write-us textarea:hover {
-    border-color: #b4b9bb;
+    border-color: #b4b9bb; 
 }
 
 /* --фокус */
@@ -1075,7 +1034,7 @@ p[class$="-line"] {
 
 /* Кнопка отправки формы */
 .write-us input[type="submit"] {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -1091,8 +1050,6 @@ p[class$="-line"] {
     background-color: rgb(251, 86, 90);
     border: none;
     border-radius: 3px;
-
-    cursor: pointer;
 }
 
 /* поведение кнопки отправки формы */
@@ -1111,27 +1068,21 @@ p[class$="-line"] {
     position: absolute;
     top: 78px;
     right: 84px;
-    background: #fff;
+    background: #fff; 
 }
 
 /* Блок социальных сетей */
 
 .social {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    /* width: 1200px; */
-    margin-top: 70px;
+    align-items: center;
+    width: 1200px;
+    margin-top: 55px;
     margin-bottom: 55px;
 }
 
 .social-description {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     width: 580px;
 }
 
@@ -1141,15 +1092,13 @@ p[class$="-line"] {
 }
 
 .social-description b {
-    font-family: "Roboto", Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
 }
 
 .social-media {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -1160,19 +1109,13 @@ p[class$="-line"] {
 .social-media li {
     margin-right: 10px;
     list-style: none;
-
+    
 }
 
 .social .network {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     width: 79px;
     height: 79px;
 
@@ -1226,11 +1169,10 @@ p[class$="-line"] {
 
 .map-wrapper {
     position: relative;
-    width: 100%;
-    /* min-width: 1200px; */
+    min-width: 1200px;
     height: 416px;
-    margin: 0 auto;
-    /* margin-left: calc(50% - 720px); */
+    margin: 0 0;
+    margin-left: calc(50% - 720px);
     margin-bottom: 50px;
 }
 
@@ -1239,34 +1181,8 @@ p[class$="-line"] {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
 
     z-index: 1;
-}
-
-.map-interactive iframe {
-    display: block;
-    width: 100%;
-}
-
-.contacts-wrapper {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.feedback .map {
-    position: absolute;
-    width: 100%;
-}
-
-.map img {
-    width: 100%;
-    height: 416px;
-    -o-object-fit: cover;
-       object-fit: cover;
 }
 
 .contacts p {
@@ -1275,17 +1191,12 @@ p[class$="-line"] {
 }
 
 .contacts {
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
     position: absolute;
-    bottom: 50%;
-    -webkit-transform: translateY(160px);
-        -ms-transform: translateY(160px);
-            transform: translateY(160px); /* в случае переполнения блок растянеется вверх, где больше места */
-    left: 130px;
-    /* width: 224px; */
-    width: 220px;
-    padding: 49px;
+    top: 55px;
+    left: 120px;
+    max-width: 320px;
+    padding: 50px;
 }
 
 .contacts .contacts-title {
@@ -1298,13 +1209,6 @@ p[class$="-line"] {
 
 .contacts .phone {
     padding-bottom: 38px;
-}
-
-.contacts-wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
 }
 
 /******************************************************************************************/
@@ -1332,18 +1236,14 @@ body {
 
 /* Для всех флекс-контейнеров */
 div[class$="-container"] {
-    width: 1160px;
+    width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
 }
 
 .main-navigation-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    align-items: stretch;
 }
 
 .inner-page .main-navigation-container {
@@ -1351,7 +1251,7 @@ div[class$="-container"] {
 }
 
 /* Убираем дефолтные стили списков */
-.site-navigation,
+.site-navigation ,
 .user-navigation {
     padding: 0;
     margin: 0;
@@ -1360,14 +1260,9 @@ div[class$="-container"] {
 }
 
 .site-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     width: 560px;
 }
 
@@ -1379,24 +1274,24 @@ div[class$="-container"] {
 }
 
 .user-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     max-width: 160px;
     margin-left: auto;
-    /* margin-right: 20px; */
-    /* padding-right: 20px; */
+    margin-right: 20px;
 }
 
 .user-navigation .basket {
     position: relative;
-    /* padding-left: 60px; */
-    padding-left: 84px;
+    padding-left: 60px;
+}
+
+/* Псевдоэлемент с иконкой корзины */
+.user-navigation .basket {
+
     background-image: url("../img/cart-icon.svg");
     background-repeat: no-repeat;
-    /* background-position: 20px 17px; */
-    background-position: 45px 17px;
-}
+    background-position: 20px 17px;
+  }
 
 .logo {
     width: 160px;
@@ -1406,7 +1301,7 @@ div[class$="-container"] {
 
 /* Красные подчеркивания у ссылок гл. навигации */
 
-.site-navigation a::after {
+.site-navigation a::after{
     content: "";
     position: absolute;
     top: 57px;
@@ -1440,8 +1335,8 @@ div[class$="-container"] {
 }
 
 /* Красное подчеркивание по нажатию и находимся на странице */
-/* .user-navigation a:active::after, */
-/* .site-navigation a:active::after, */
+.user-navigation a:active::after,
+.site-navigation a:active::after,
 .site-navigation .site-navigation-current::after {
     display: block;
 }
@@ -1465,51 +1360,26 @@ div[class$="-container"] {
 /* Блок предложений */
 
 .advantages ul {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-start;
-    width: 1160px;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 1200px;
     padding-bottom: 0;
     padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
-    margin-bottom: 77px;
-    border-bottom: 2px solid #eee;
-}
-
-.advantages .button {
-    position: absolute;
-    /* bottom: 72px; */
-    bottom: 77px;
-    text-align: center;
 }
 
 .advantages li {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    /* min-width: 400px; */
+    flex-grow: 1;
+    width: 380px;
     padding: 0;
     padding-top: 145px;
-    /* padding-bottom: 95px; */
-    padding-bottom: 115px;
+    padding-bottom: 95px;
     margin: 0;
-    margin-right: 100px;
     background-repeat: no-repeat;
     background-position: 0 0;
-}
-
-.advantages li:last-child {
-    margin: 0;
-    margin-right: 60px;
 }
 
 /* Картинки в блоке с предложениями */
@@ -1525,14 +1395,17 @@ div[class$="-container"] {
     background-image: url("../img/illustration-3.jpg");
 }
 
+.advantages ul {
+    margin-bottom: 70px;
+    border-bottom: 2px solid #eee;
+}
+
 /* Блок преимуществ */
 
 .studio {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    width: 1160px;
-    padding-bottom: 46px;
+    width: 1200px;
+    padding-bottom: 48px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
@@ -1541,20 +1414,12 @@ div[class$="-container"] {
 }
 
 .left-column {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-    /* width: 660px; */
-    /* margin-right: 140px; */
-    width: 700px;
-    margin-right: 110px;
+    width: 660px;
+    margin-right: 140px;
 }
 
 .right-column {
@@ -1563,17 +1428,15 @@ div[class$="-container"] {
 
 /* Обнуляем дефолтные отступы */
 .studio h3,
+.studio left,
 .studio p,
 .studio ul {
     margin: 0;
     padding: 0;
-}
+} 
 
+.left-column li,
 .left-column h4 {
-    margin-bottom: 26px;
-}
-
-.left-column li {
     margin-bottom: 30px;
 }
 
@@ -1586,12 +1449,8 @@ div[class$="-container"] {
 }
 
 .right-column .percent {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
 
     padding: 0;
     margin: 0;
@@ -1602,7 +1461,7 @@ div[class$="-container"] {
     margin-bottom: 40px;
 }
 
-.right-column li:not(:last-child) {
+.right-column li {
     margin-right: 22px;
 }
 
@@ -1627,22 +1486,15 @@ div[class$="-container"] {
 }
 
 .partners .ref-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 1160px;
-    /* padding-bottom: 42px; */
-    /* padding-top: 44px; */
-    padding: 42px 20px 44px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    padding-bottom: 42px;
+    padding-top: 44px;
     margin: 0 auto;
+
     border-bottom: 2px solid #eeeeee;
 }
 
@@ -1655,28 +1507,27 @@ div[class$="-container"] {
 /* Переключатели слайдера */
 .slider-controls i {
     position: relative;
-
+    
     display: inline-block;
-    vertical-align: middle;
     width: 18px;
     height: 18px;
     padding: 8px;
-
+    
     border-radius: 50%;
     cursor: pointer;
 }
 
 .slider-controls i::after {
     content: "";
-
+    
     position: absolute;
     top: 8px;
     left: 8px;
     z-index: 1;
-
+    
     width: 18px;
     height: 18px;
-
+    
     background: #ffffff;
     border-radius: 50%;
 }
@@ -1686,21 +1537,19 @@ div[class$="-container"] {
     left: 50%;
     bottom: 104px;
     /*z-index: 100;*/
-
+    
     width: 160px;
     height: 18px;
-
+  
     text-align: center;
     font-size: 0;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 /* Активный переключатель */
 .slider-controls .active::before {
     content: "";
-
+    
     position: absolute;
     top: 12px;
     left: 12px;
@@ -1715,11 +1564,10 @@ div[class$="-container"] {
 }
 
 .container-centering {
-    width: 1160px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .slide h3,
@@ -1730,7 +1578,7 @@ div[class$="-container"] {
 
 .top-slider {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 15px;
     margin: 0 auto;
 }
 
@@ -1756,7 +1604,7 @@ div[class$="-container"] {
 }
 
 .slide-1 {
-    /* Временно */
+    
 
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
@@ -1772,16 +1620,6 @@ div[class$="-container"] {
     background-position: 500px -16px;
     background-clip: unset;
 }
-
-.slide-2 h2 {
-    max-width: 520px;
-}
-
-.slide-2 p {
-    max-width: 430px;
-}   /* Хотя, на мой взгляд, это два лишних правила. Можно было обойтись
-    br-ками, тем более что для первого и третьего слайдов это разрешено.
-    Почему для второго нельзя? */
 
 .slide-3 {
     display: none;/* Временно */
@@ -1800,7 +1638,7 @@ div[class$="-container"] {
 */
 
 .catalog {
-    width: 1160px;
+    width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -1809,17 +1647,13 @@ div[class$="-container"] {
 .sorting-wrapper {
     min-height: 1990px;
     width: 760px;
-    /* margin-right: 40px; */
+    margin-right: 40px;
 }
 
 /* Общая обертка для колонок */
 .catalog-columns {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
 
     max-width: 1200px;
     margin:0 auto 60px;
@@ -1829,28 +1663,23 @@ div[class$="-container"] {
 .template-item {
     min-height: 616px;
     width: 360px;
-    /* margin-bottom: 60px; */
-    margin-bottom: 34px;
+    margin-bottom: 60px;
     margin-right: 40px;
 }
 
 /* Делаем список шаблонов флекс-контейнером */
 .template-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-bottom: 26px;
 
     list-style: none;
-}
+  }
 
 .template-item:nth-child(2n) {
     margin-right: 0;
-}
+  }
 
 /* Всплывающий блок */
 /* Сделать на флексах */
@@ -1874,8 +1703,7 @@ div[class$="-container"] {
     background-image: url("../img/browser-dark.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    -webkit-box-shadow: 0 2px 20px 1px #999998;
-            box-shadow: 0 2px 20px 1px #999998;
+    box-shadow: 0 2px 20px 1px #999998;
 }
 
 .template-description-block h3 {
@@ -1888,7 +1716,7 @@ div[class$="-container"] {
 .template-description-block p {
     width: 240px;
     text-align: center;
-
+    
     padding: 0;
     margin: 0;
     margin-bottom: 100px;
@@ -1907,19 +1735,17 @@ div[class$="-container"] {
 
   /* Пагинатор */
 .pagination-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 0;
     margin: 0;
-
+    
     list-style: none;
 }
 
 .pagination-item a {
     display: block;
     width: 50px;
-    margin-right: 11px;
+    margin-right: 10px;
     padding-top: 17px;
     padding-bottom: 16px;
 }
@@ -1929,29 +1755,3 @@ div[class$="-container"] {
 }
 
 /*********************************************************************************************/
-/* Плавно спускаем модальное окно*/
-@keyframes bounce {
-    0% { transform: translateY(-2000px); }
-    70% { transform: translateY(30px); }
-    90% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-/* Стили для реализации модального окна write-us */
-.modal-show {
-    display: block;
-    animation-name: bounce;
-    animation-duration: 600ms; /*не работает при 0.6s; почему?*/
-}
-
-/*трясем форму в случае ошибочной отправки*/
-@keyframes shake {
-    0%, 100% { transform: translateX(0);}
-    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
-    20%, 40%, 60%, 80% { transform: translateX(10px);}
-}
-
-.modal-error {
-    animation-name: shake;
-    animation-duration: 600ms;
-}
